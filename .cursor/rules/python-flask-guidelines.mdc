@@ -1,0 +1,243 @@
+# Python Flask Development Guidelines
+
+Comprehensive guidelines for Python, Flask, and scalable API development.
+
+<rule>
+name: python_flask_guidelines
+description: Expert guidelines for Python, Flask, and scalable API development
+filters:
+  - type: file_extension
+    pattern: "\\.py$"
+  - type: content
+    pattern: "(flask|Flask|Blueprint|SQLAlchemy|marshmallow)"
+  - type: context
+    pattern: "(api|web|backend|server)"
+
+actions:
+  - type: suggest
+    when: "creating_new_file"
+    message: |
+      For new Flask applications, follow this structure:
+      
+      ```python
+      # app/__init__.py
+      from flask import Flask
+      from flask_sqlalchemy import SQLAlchemy
+      from flask_migrate import Migrate
+      
+      db = SQLAlchemy()
+      migrate = Migrate()
+      
+      def create_app(config_name='development'):
+          app = Flask(__name__)
+          app.config.from_object(f'config.{config_name.capitalize()}Config')
+          
+          db.init_app(app)
+          migrate.init_app(app, db)
+          
+          from .blueprints import user_bp, auth_bp
+          app.register_blueprint(user_bp, url_prefix='/api/users')
+          app.register_blueprint(auth_bp, url_prefix='/api/auth')
+          
+          return app
+      ```
+
+  - type: suggest
+    when: "writing_routes"
+    message: |
+      Use Flask Blueprints for route organization:
+      
+      ```python
+      from flask import Blueprint, request, jsonify
+      from marshmallow import Schema, fields
+      
+      user_bp = Blueprint('users', __name__)
+      
+      class UserSchema(Schema):
+          id = fields.Int(dump_only=True)
+          username = fields.Str(required=True)
+          email = fields.Email(required=True)
+      
+      @user_bp.route('/<int:user_id>', methods=['GET'])
+      def get_user(user_id: int):
+          user = get_user_by_id(user_id)
+          if not user:
+              return jsonify({'error': 'User not found'}), 404
+          
+          schema = UserSchema()
+          return jsonify(schema.dump(user))
+      ```
+
+  - type: suggest
+    when: "error_handling"
+    message: |
+      Use early returns and guard clauses for better error handling:
+      
+      ```python
+      def get_user_by_id(user_id: int) -> Optional[User]:
+          if not user_id or user_id <= 0:
+              return None
+          
+          if not current_user.has_permission('read_users'):
+              raise PermissionError("Insufficient permissions")
+          
+          user = User.query.get(user_id)
+          if not user:
+              return None
+          
+          return user
+      ```
+
+  - type: suggest
+    when: "database_operations"
+    message: |
+      Use Flask-SQLAlchemy with proper session management:
+      
+      ```python
+      from flask_sqlalchemy import SQLAlchemy
+      from sqlalchemy.exc import SQLAlchemyError
+      
+      db = SQLAlchemy()
+      
+      class User(db.Model):
+          id = db.Column(db.Integer, primary_key=True)
+          username = db.Column(db.String(80), unique=True, nullable=False)
+          email = db.Column(db.String(120), unique=True, nullable=False)
+      
+      def create_user(username: str, email: str) -> Optional[User]:
+          try:
+              user = User(username=username, email=email)
+              db.session.add(user)
+              db.session.commit()
+              return user
+          except SQLAlchemyError as e:
+              db.session.rollback()
+              app.logger.error(f"Database error: {e}")
+              return None
+      ```
+
+  - type: suggest
+    when: "authentication"
+    message: |
+      Implement JWT authentication with Flask-JWT-Extended:
+      
+      ```python
+      from flask_jwt_extended import jwt_required, get_jwt_identity
+      
+      @user_bp.route('/profile', methods=['GET'])
+      @jwt_required()
+      def get_profile():
+          current_user_id = get_jwt_identity()
+          user = User.query.get(current_user_id)
+          if not user:
+              return jsonify({'error': 'User not found'}), 404
+          
+          schema = UserSchema()
+          return jsonify(schema.dump(user))
+      ```
+
+  - type: suggest
+    when: "testing"
+    message: |
+      Write tests using pytest and Flask's test client:
+      
+      ```python
+      import pytest
+      from app import create_app, db
+      from app.models import User
+      
+      @pytest.fixture
+      def app():
+          app = create_app('testing')
+          with app.app_context():
+              db.create_all()
+              yield app
+              db.drop_all()
+      
+      @pytest.fixture
+      def client(app):
+          return app.test_client()
+      
+      def test_get_user(client, app):
+          with app.app_context():
+              user = User(username='test', email='test@example.com')
+              db.session.add(user)
+              db.session.commit()
+              
+              response = client.get(f'/api/users/{user.id}')
+              assert response.status_code == 200
+              assert response.json['username'] == 'test'
+      ```
+
+  - type: suggest
+    when: "performance"
+    message: |
+      Optimize performance with caching and database queries:
+      
+      ```python
+      from flask_caching import Cache
+      
+      cache = Cache()
+      
+      @user_bp.route('/<int:user_id>', methods=['GET'])
+      @cache.memoize(timeout=300)
+      def get_user(user_id: int):
+          user = User.query.get(user_id)
+          if not user:
+              return jsonify({'error': 'User not found'}), 404
+          
+          schema = UserSchema()
+          return jsonify(schema.dump(user))
+      ```
+
+  - type: suggest
+    when: "configuration"
+    message: |
+      Use environment-based configuration:
+      
+      ```python
+      # config.py
+      import os
+      
+      class Config:
+          SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev-secret-key'
+          SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+          SQLALCHEMY_TRACK_MODIFICATIONS = False
+      
+      class DevelopmentConfig(Config):
+          DEBUG = True
+          SQLALCHEMY_DATABASE_URI = 'sqlite:///dev.db'
+      
+      class ProductionConfig(Config):
+          DEBUG = False
+      
+      class TestingConfig(Config):
+          TESTING = True
+          SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
+      ```
+
+examples:
+  - input: |
+      # Creating a new Flask app
+      from flask import Flask
+      app = Flask(__name__)
+    output: "Use application factory pattern for better modularity and testing"
+
+  - input: |
+      # Writing a route without validation
+      @app.route('/users/<id>')
+      def get_user(id):
+          return User.query.get(id)
+    output: "Add proper error handling, validation, and serialization"
+
+  - input: |
+      # Database operation without error handling
+      user = User(username='test')
+      db.session.add(user)
+      db.session.commit()
+    output: "Wrap in try-catch with proper session management"
+
+metadata:
+  priority: high
+  version: 1.0
+</rule>

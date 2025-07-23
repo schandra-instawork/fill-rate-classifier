@@ -1,0 +1,139 @@
+# Email Templates Configuration
+# Templates for automated email communications based on classifications
+
+version: "1.0.0"
+
+# Global email settings
+settings:
+  from_address: "fillrate-alerts@instawork.com"
+  reply_to: "support@instawork.com"
+  cc_addresses:
+    - "account-management@instawork.com"
+  enable_tracking: true
+  
+# Template definitions
+templates:
+  low_pay_rate_alert:
+    id: "TPL_001"
+    subject: "Opportunity to Improve Fill Rates - Pay Rate Analysis"
+    body: |
+      Hi {{partner_name}},
+
+      Our analysis shows that your current pay rates may be impacting your fill rates. 
+      Based on market data for {{location}}, we've identified opportunities to improve 
+      worker availability by adjusting compensation.
+
+      Current Analysis:
+      - Your average rate: ${{current_rate}}/hour
+      - Market average: ${{market_rate}}/hour
+      - Potential fill rate improvement: {{potential_improvement}}%
+
+      We'd be happy to discuss strategies to optimize your pay rates while maintaining 
+      your budget goals.
+
+      Best regards,
+      The Instawork Team
+    variables:
+      - partner_name
+      - location
+      - current_rate
+      - market_rate
+      - potential_improvement
+    attachments:
+      - type: "report"
+        name: "pay_rate_analysis.pdf"
+        
+  geographic_expansion_opportunity:
+    id: "TPL_002"
+    subject: "Expand Your Worker Pool - Geographic Coverage Insights"
+    body: |
+      Hi {{partner_name}},
+
+      We've noticed that some of your shifts in {{affected_areas}} have lower fill rates 
+      due to limited worker coverage in those areas.
+
+      Recommendations:
+      - Consider offering transportation incentives
+      - Adjust shift locations to nearby high-coverage areas
+      - Implement zone-based pay differentials
+
+      Areas with better coverage nearby:
+      {{nearby_areas_list}}
+
+      Would you like to explore these options? We can set up a brief call to discuss.
+
+      Best regards,
+      The Instawork Team
+    variables:
+      - partner_name
+      - affected_areas
+      - nearby_areas_list
+      
+  shift_optimization_suggestion:
+    id: "TPL_003"
+    subject: "Optimize Your Shift Timing for Better Fill Rates"
+    body: |
+      Hi {{partner_name}},
+
+      Our data indicates that adjusting your shift times could significantly improve 
+      fill rates. Here's what we found:
+
+      Current challenging times:
+      {{problem_shifts}}
+
+      Recommended adjustments:
+      {{recommended_shifts}}
+
+      Expected improvement: {{expected_improvement}}% fill rate increase
+
+      Small timing adjustments can make a big difference in worker availability. 
+      Let us know if you'd like help implementing these changes.
+
+      Best regards,
+      The Instawork Team
+    variables:
+      - partner_name
+      - problem_shifts
+      - recommended_shifts
+      - expected_improvement
+      
+  general_fill_rate_inquiry:
+    id: "TPL_004"
+    subject: "Let's Improve Your Fill Rates Together"
+    body: |
+      Hi {{partner_name}},
+
+      We've noticed some opportunities to improve your fill rates and wanted to 
+      reach out to offer our support.
+
+      Your recent metrics:
+      - Current fill rate: {{current_fill_rate}}%
+      - Industry average: {{industry_average}}%
+
+      Our team has identified several potential improvements. Would you be available 
+      for a brief call this week to discuss personalized recommendations?
+
+      Best regards,
+      The Instawork Team
+    variables:
+      - partner_name
+      - current_fill_rate
+      - industry_average
+
+# Email sending rules
+sending_rules:
+  rate_limiting:
+    max_per_partner_per_day: 1
+    max_per_partner_per_week: 3
+    
+  scheduling:
+    preferred_send_times:
+      - "09:00"
+      - "14:00"
+    avoid_weekends: true
+    timezone: "partner_timezone"  # Use partner's timezone
+    
+  follow_up:
+    enabled: true
+    delay_days: 3
+    max_follow_ups: 2

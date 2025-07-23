@@ -1,0 +1,132 @@
+# Classification Rules Configuration
+# This file defines the rules for classifying fill rate issues
+# Rules are evaluated in order, and multiple rules can match
+
+# Version control for rule compatibility
+version: "1.0.0"
+
+# Global settings for classification
+settings:
+  enable_multi_label: true  # Company can have multiple issues
+  max_labels_per_company: 3
+  confidence_aggregation: "weighted_average"  # max, average, weighted_average
+
+# Level 1: Response Type Classification
+response_types:
+  email:
+    description: "Issues that can be addressed through automated email communication"
+    priority: 1
+    
+  action:
+    description: "Issues requiring manual intervention or complex actions"
+    priority: 2
+
+# Level 2: Specific Classification Rules
+classification_rules:
+  # Email Classifications
+  email_classifications:
+    low_pay_rate:
+      id: "EMAIL_X"
+      name: "Low Pay Rate Alert"
+      description: "Partner's pay rates are below market average"
+      patterns:
+        - regex: "pay.*below.*market"
+          weight: 0.9
+        - regex: "compensation.*insufficient"
+          weight: 0.8
+        - keywords: ["low pay", "underpaid", "below average wage"]
+          weight: 0.7
+      confidence_boost:
+        - if_contains: ["salary", "wage", "hourly rate"]
+          boost: 0.1
+      email_template: "low_pay_rate_alert"
+      
+    geographic_coverage:
+      id: "EMAIL_Y"
+      name: "Geographic Coverage Gap"
+      description: "Limited worker availability in certain areas"
+      patterns:
+        - regex: "location.*no.*workers"
+          weight: 0.9
+        - regex: "geographic.*coverage.*limited"
+          weight: 0.85
+        - keywords: ["area not covered", "location gap", "no workers nearby"]
+          weight: 0.8
+      confidence_boost:
+        - if_contains: ["zip code", "city", "region"]
+          boost: 0.15
+      email_template: "geographic_expansion_opportunity"
+      
+    shift_timing_mismatch:
+      id: "EMAIL_Z"
+      name: "Shift Timing Mismatch"
+      description: "Shift times don't align with worker availability"
+      patterns:
+        - regex: "shift.*time.*conflict"
+          weight: 0.9
+        - regex: "timing.*mismatch"
+          weight: 0.85
+        - keywords: ["overnight shifts", "early morning", "weekend availability"]
+          weight: 0.75
+      email_template: "shift_optimization_suggestion"
+
+  # Action Classifications  
+  action_classifications:
+    contract_renegotiation:
+      id: "ACTION_A"
+      name: "Contract Renegotiation Required"
+      description: "Terms need to be renegotiated with the partner"
+      patterns:
+        - regex: "contract.*expired|agreement.*outdated"
+          weight: 0.95
+        - regex: "terms.*renegotiat"
+          weight: 0.9
+        - keywords: ["contract renewal", "agreement update", "terms revision"]
+          weight: 0.85
+      requires_approval: true
+      assignee_role: "account_manager"
+      
+    market_analysis:
+      id: "ACTION_B"
+      name: "Market Analysis Required"
+      description: "Deeper analysis needed to understand market dynamics"
+      patterns:
+        - regex: "market.*analysis.*required"
+          weight: 0.9
+        - regex: "competitive.*landscape.*changed"
+          weight: 0.85
+        - keywords: ["market research", "competitor analysis", "industry trends"]
+          weight: 0.8
+      requires_approval: false
+      assignee_role: "analyst"
+      
+    partner_meeting:
+      id: "ACTION_C"
+      name: "Partner Meeting Needed"
+      description: "Direct engagement with partner required"
+      patterns:
+        - regex: "requires.*meeting|discussion.*needed"
+          weight: 0.9
+        - regex: "escalation.*required"
+          weight: 0.95
+        - keywords: ["urgent discussion", "executive alignment", "strategic review"]
+          weight: 0.85
+      requires_approval: true
+      assignee_role: "account_executive"
+      priority: "high"
+
+# Fallback rules when no pattern matches
+fallback_rules:
+  unknown_email_issue:
+    id: "EMAIL_UNKNOWN"
+    name: "General Fill Rate Issue"
+    description: "Unclassified issue requiring email follow-up"
+    confidence: 0.5
+    email_template: "general_fill_rate_inquiry"
+    
+  unknown_action_required:
+    id: "ACTION_UNKNOWN"
+    name: "Manual Review Required"
+    description: "Issue requires manual classification"
+    confidence: 0.3
+    assignee_role: "operations"

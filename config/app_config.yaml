@@ -1,0 +1,45 @@
+# Application Configuration
+# This file contains all application-wide settings and parameters
+# Environment-specific values should be set via environment variables
+
+app:
+  name: "Fill Rate Classifier"
+  version: "0.1.0"
+  environment: "${ENVIRONMENT:development}"  # development, staging, production
+
+api:
+  base_url: "${API_BASE_URL:http://localhost:8000}"
+  timeout: 30  # seconds
+  max_retries: 3
+  retry_delay: 1  # seconds
+  rate_limit:
+    calls_per_minute: 60
+    burst_size: 10
+
+classification:
+  confidence_threshold:
+    email: 0.7  # Minimum confidence for email classification
+    action: 0.85  # Higher threshold for actions requiring manual intervention
+  batch_size: 100  # Number of companies to process in one batch
+  parallel_workers: 4
+
+logging:
+  level: "${LOG_LEVEL:INFO}"
+  format: "json"  # json or text
+  file:
+    enabled: true
+    path: "logs/fill_rate_classifier.log"
+    max_size_mb: 100
+    backup_count: 5
+
+output:
+  default_format: "json"  # json, csv, parquet
+  directory: "data/output"
+  timestamp_format: "%Y%m%d_%H%M%S"
+
+monitoring:
+  metrics_enabled: true
+  health_check_interval: 60  # seconds
+  alert_thresholds:
+    api_error_rate: 0.1  # 10%
+    classification_failure_rate: 0.05  # 5%
