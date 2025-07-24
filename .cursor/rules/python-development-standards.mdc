@@ -1,0 +1,448 @@
+# Python Development Standards
+
+Comprehensive development standards covering web frameworks, security, performance, and best practices for Python applications.
+
+<rule>
+name: python_development_standards
+description: Comprehensive Python development standards including web frameworks, security, performance, and best practices
+filters:
+  - type: file_extension
+    pattern: "\\.(py|js|ts|jsx|tsx|java|cpp|c|go|rs|php|rb|swift|kt)$"
+  - type: content
+    pattern: "(import|from|class|def|function|django|flask|fastapi|security|performance|optimization)"
+  - type: context
+    pattern: "(web|api|security|performance|framework|development)"
+
+actions:
+  - type: suggest
+    when: "framework_selection"
+    message: |
+      **Framework Selection Guidelines:**
+
+      **Django (Recommended for Complex Applications):**
+      - Use for large-scale applications with complex business logic
+      - Built-in admin interface and ORM
+      - Comprehensive authentication and authorization
+      - Example structure:
+      ```
+      project/
+      ├── manage.py
+      ├── requirements.txt
+      ├── app/
+      │   ├── __init__.py
+      │   ├── models.py
+      │   ├── views.py
+      │   ├── urls.py
+      │   ├── forms.py
+      │   └── admin.py
+      ├── templates/
+      ├── static/
+      └── tests/
+      ```
+
+      **Flask (Lightweight and Flexible):**
+      - Use for microservices and simple APIs
+      - Minimal boilerplate, maximum flexibility
+      - Blueprint-based organization
+      - Example structure:
+      ```
+      app/
+      ├── __init__.py
+      ├── config.py
+      ├── models/
+      ├── views/
+      ├── services/
+      ├── utils/
+      └── tests/
+      ```
+
+      **FastAPI (Modern API Development):**
+      - Use for high-performance APIs with automatic documentation
+      - Async support and type hints
+      - OpenAPI/Swagger integration
+      - Example structure:
+      ```
+      app/
+      ├── main.py
+      ├── models/
+      ├── routers/
+      ├── services/
+      ├── dependencies/
+      └── tests/
+      ```
+
+  - type: suggest
+    when: "security_implementation"
+    message: |
+      **Security Best Practices:**
+
+      **Input Validation:**
+      ```python
+      from pydantic import BaseModel, validator
+      from django.core.validators import validate_email
+      
+      class UserInput(BaseModel):
+          email: str
+          password: str
+          
+          @validator('email')
+          def validate_email_format(cls, v):
+              validate_email(v)
+              return v.lower()
+          
+          @validator('password')
+          def validate_password_strength(cls, v):
+              if len(v) < 8:
+                  raise ValueError('Password too short')
+              if not any(c.isupper() for c in v):
+                  raise ValueError('Password needs uppercase')
+              return v
+      ```
+
+      **SQL Injection Prevention:**
+      ```python
+      # Django ORM (Safe)
+      users = User.objects.filter(email=email, is_active=True)
+      
+      # Raw SQL (Use parameters)
+      from django.db import connection
+      with connection.cursor() as cursor:
+          cursor.execute(
+              "SELECT * FROM users WHERE email = %s AND is_active = %s",
+              [email, True]
+          )
+      
+      # Flask SQLAlchemy
+      users = User.query.filter_by(email=email, is_active=True).all()
+      ```
+
+      **Authentication & Authorization:**
+      ```python
+      # Django
+      from django.contrib.auth.decorators import login_required, permission_required
+      
+      @login_required
+      @permission_required('app.can_view_sensitive_data')
+      def sensitive_view(request):
+          return render(request, 'sensitive.html')
+      
+      # Flask
+      from functools import wraps
+      from flask_login import login_required, current_user
+      
+      def admin_required(f):
+          @wraps(f)
+          def decorated_function(*args, **kwargs):
+              if not current_user.is_admin:
+                  abort(403)
+              return f(*args, **kwargs)
+          return decorated_function
+      ```
+
+      **CSRF Protection:**
+      ```python
+      # Django (Automatic)
+      {% csrf_token %}
+      
+      # Flask
+      from flask_wtf.csrf import CSRFProtect
+      csrf = CSRFProtect(app)
+      ```
+
+  - type: suggest
+    when: "performance_optimization"
+    message: |
+      **Performance Optimization:**
+
+      **Database Optimization:**
+      ```python
+      # Django ORM Optimization
+      # Bad: N+1 queries
+      for user in User.objects.all():
+          print(user.profile.bio)  # N+1 problem
+      
+      # Good: Use select_related/prefetch_related
+      users = User.objects.select_related('profile').all()
+      for user in users:
+          print(user.profile.bio)  # Single query
+      
+      # Flask SQLAlchemy
+      users = User.query.options(joinedload('profile')).all()
+      ```
+
+      **Caching Strategies:**
+      ```python
+      # Django Caching
+      from django.core.cache import cache
+      from django.views.decorators.cache import cache_page
+      
+      @cache_page(60 * 15)  # Cache for 15 minutes
+      def expensive_view(request):
+          return render(request, 'expensive.html')
+      
+      # Redis Caching
+      import redis
+      r = redis.Redis(host='localhost', port=6379, db=0)
+      
+      def get_user_data(user_id):
+          cache_key = f"user:{user_id}"
+          data = r.get(cache_key)
+          if data is None:
+              data = fetch_user_data(user_id)
+              r.setex(cache_key, 3600, data)  # Cache for 1 hour
+          return data
+      ```
+
+      **Async Programming:**
+      ```python
+      # FastAPI Async
+      from fastapi import FastAPI
+      import asyncio
+      
+      app = FastAPI()
+      
+      @app.get("/users/{user_id}")
+      async def get_user(user_id: int):
+          user = await fetch_user_async(user_id)
+          return user
+      
+      # Django Async (3.1+)
+      from django.http import HttpResponse
+      import asyncio
+      
+      async def async_view(request):
+          await asyncio.sleep(1)
+          return HttpResponse("Async response")
+      ```
+
+  - type: suggest
+    when: "code_organization"
+    message: |
+      **Code Organization:**
+
+      **Project Structure:**
+      ```
+      project/
+      ├── app/
+      │   ├── models/          # Data models
+      │   ├── services/        # Business logic
+      │   ├── views/           # View controllers
+      │   ├── utils/           # Utility functions
+      │   └── tests/           # Test files
+      ├── config/              # Configuration
+      ├── static/              # Static files
+      ├── templates/           # Templates
+      └── requirements.txt     # Dependencies
+      ```
+
+      **Import Organization:**
+      ```python
+      # Standard library imports
+      import os
+      import sys
+      from datetime import datetime
+      from typing import List, Dict, Optional
+      
+      # Third-party imports
+      import django
+      from django.db import models
+      from django.contrib.auth import get_user_model
+      
+      # Local application imports
+      from .models import User, Profile
+      from .services import UserService
+      from .utils import helpers
+      ```
+
+      **Service Layer Pattern:**
+      ```python
+      class UserService:
+          def __init__(self, email_service=None):
+              self.email_service = email_service or EmailService()
+          
+          def create_user(self, user_data: Dict) -> User:
+              # Business logic here
+              user = User.objects.create(**user_data)
+              self.email_service.send_welcome_email(user.email)
+              return user
+      
+      # Usage in views
+      def user_create_view(request):
+          service = UserService()
+          user = service.create_user(request.POST)
+          return redirect('user_detail', pk=user.pk)
+      ```
+
+  - type: suggest
+    when: "error_handling"
+    message: |
+      **Error Handling:**
+
+      **Custom Exceptions:**
+      ```python
+      class ApplicationError(Exception):
+          """Base exception for application errors."""
+          pass
+      
+      class ValidationError(ApplicationError):
+          """Raised when data validation fails."""
+          pass
+      
+      class BusinessLogicError(ApplicationError):
+          """Raised when business rules are violated."""
+          pass
+      
+      # Usage
+      def process_user_data(user_data):
+          if not validate_email(user_data['email']):
+              raise ValidationError("Invalid email format")
+          
+          if user_exists(user_data['email']):
+              raise BusinessLogicError("User already exists")
+      ```
+
+      **Logging:**
+      ```python
+      import logging
+      
+      logger = logging.getLogger(__name__)
+      
+      def process_data(data):
+          try:
+              result = complex_operation(data)
+              logger.info(f"Successfully processed data: {data['id']}")
+              return result
+          except Exception as e:
+              logger.error(f"Failed to process data {data['id']}: {str(e)}")
+              raise
+      ```
+
+  - type: suggest
+    when: "testing_strategies"
+    message: |
+      **Testing Strategies:**
+
+      **Unit Testing:**
+      ```python
+      import pytest
+      from unittest.mock import Mock, patch
+      
+      def test_user_creation():
+          # Arrange
+          user_data = {'email': 'test@example.com', 'name': 'Test User'}
+          mock_email_service = Mock()
+          service = UserService(email_service=mock_email_service)
+          
+          # Act
+          user = service.create_user(user_data)
+          
+          # Assert
+          assert user.email == user_data['email']
+          mock_email_service.send_welcome_email.assert_called_once()
+      ```
+
+      **Integration Testing:**
+      ```python
+      from django.test import TestCase
+      from django.urls import reverse
+      
+      class UserIntegrationTest(TestCase):
+          def test_user_registration_flow(self):
+              response = self.client.post(reverse('user_register'), {
+                  'email': 'test@example.com',
+                  'password': 'testpass123'
+              })
+              self.assertEqual(response.status_code, 302)
+              self.assertTrue(User.objects.filter(email='test@example.com').exists())
+      ```
+
+  - type: suggest
+    when: "deployment_configuration"
+    message: |
+      **Deployment Configuration:**
+
+      **Environment Variables:**
+      ```python
+      # settings.py
+      import os
+      
+      SECRET_KEY = os.environ.get('SECRET_KEY')
+      DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
+      DATABASE_URL = os.environ.get('DATABASE_URL')
+      
+      # Production settings
+      if not DEBUG:
+          ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
+          SECURE_SSL_REDIRECT = True
+          SESSION_COOKIE_SECURE = True
+      ```
+
+      **Docker Configuration:**
+      ```dockerfile
+      FROM python:3.11-slim
+      
+      WORKDIR /app
+      COPY requirements.txt .
+      RUN pip install -r requirements.txt
+      
+      COPY . .
+      EXPOSE 8000
+      
+      CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app.wsgi:application"]
+      ```
+
+      **Health Checks:**
+      ```python
+      from django.http import JsonResponse
+      from django.db import connection
+      
+      def health_check(request):
+          try:
+              # Check database
+              with connection.cursor() as cursor:
+                  cursor.execute("SELECT 1")
+              
+              return JsonResponse({
+                  'status': 'healthy',
+                  'database': 'connected'
+              })
+          except Exception as e:
+              return JsonResponse({
+                  'status': 'unhealthy',
+                  'error': str(e)
+              }, status=500)
+      ```
+
+examples:
+  - input: |
+      # Poor security
+      user_input = request.POST.get('user_input')
+      query = f"SELECT * FROM users WHERE name = '{user_input}'"
+    output: "Use parameterized queries to prevent SQL injection"
+
+  - input: |
+      # N+1 query problem
+      for user in User.objects.all():
+          print(user.profile.bio)
+    output: "Use select_related() to optimize database queries"
+
+  - input: |
+      # No error handling
+      result = some_operation()
+    output: "Add proper error handling with try/except blocks"
+
+  - input: |
+      # Mixed imports
+      from .models import User
+      import os
+      from django.db import models
+    output: "Organize imports: stdlib, third-party, then local imports"
+
+metadata:
+  priority: high
+  version: 1.0
+</rule>
+description:
+globs:
+alwaysApply: false
+---

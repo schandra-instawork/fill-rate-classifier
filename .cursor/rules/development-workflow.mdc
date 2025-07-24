@@ -1,0 +1,383 @@
+# Development Workflow and Standards
+
+Comprehensive development workflow standards covering commits, file naming, documentation, and testing practices.
+
+<rule>
+name: development_workflow
+description: Development workflow standards including commits, file organization, documentation, and testing
+filters:
+  - type: file_extension
+    pattern: ".*"
+  - type: content
+    pattern: "(git|commit|test|doc|header|naming|workflow)"
+  - type: context
+    pattern: "(development|workflow|standards|quality)"
+
+actions:
+  - type: suggest
+    when: "commit_standards"
+    message: |
+      **Commit Standards:**
+
+      **Conventional Commit Format:**
+      ```
+      <type>(<scope>): <description>
+
+      [optional body]
+
+      [optional footer]
+      ```
+
+      **Types:**
+      - `feat`: New feature
+      - `fix`: Bug fix
+      - `docs`: Documentation changes
+      - `style`: Code style changes
+      - `refactor`: Code refactoring
+      - `perf`: Performance improvements
+      - `test`: Adding or updating tests
+      - `chore`: Maintenance tasks
+
+      **Examples:**
+      ```bash
+      # Good commits
+      feat(auth): add JWT token authentication
+      fix(api): resolve user creation validation issue
+      docs(readme): update installation instructions
+      test(user): add unit tests for user service
+      refactor(models): extract user validation logic
+      
+      # Bad commits
+      git commit -m "fix bug"
+      git commit -m "update stuff"
+      git commit -m "wip"
+      ```
+
+      **Commit Message Guidelines:**
+      - Use imperative mood ("add" not "added")
+      - Keep subject line under 50 characters
+      - Start with lowercase letter
+      - No period at the end
+      - Include scope for better categorization
+
+  - type: suggest
+    when: "file_organization"
+    message: |
+      **File Organization Standards:**
+
+      **Python File Naming:**
+      ```python
+      # Use snake_case for Python files
+      user_models.py          # ✅ Good
+      user_services.py        # ✅ Good
+      test_user_models.py     # ✅ Good
+      
+      # Avoid these patterns
+      userModels.py           # ❌ camelCase
+      UserModels.py           # ❌ PascalCase
+      user-models.py          # ❌ kebab-case
+      ```
+
+      **JavaScript/TypeScript File Naming:**
+      ```javascript
+      // Use camelCase for JavaScript/TypeScript files
+      userService.js          # ✅ Good
+      userController.js       # ✅ Good
+      
+      // React components use PascalCase
+      UserProfile.jsx         # ✅ Good
+      UserProfile.tsx         # ✅ Good
+      
+      // Avoid these patterns
+      user_service.js         # ❌ snake_case
+      UserService.js          # ❌ PascalCase (except components)
+      ```
+
+      **Directory Structure:**
+      ```
+      project/
+      ├── src/                    # Source code
+      │   ├── models/             # Data models
+      │   ├── services/           # Business logic
+      │   ├── utils/              # Utility functions
+      │   └── tests/              # Test files
+      ├── docs/                   # Documentation
+      ├── config/                 # Configuration
+      ├── scripts/                # Build scripts
+      └── requirements.txt        # Dependencies
+      ```
+
+  - type: suggest
+    when: "file_documentation"
+    message: |
+      **File Documentation Standards:**
+
+      **Python File Headers:**
+      ```python
+      """
+      User Service Module
+      
+      Purpose: Business logic for user management operations
+      Dependencies: models.User, services.EmailService, utils.validators
+      
+      This module provides user creation, authentication, and profile
+      management functionality with comprehensive error handling.
+      
+      Usage:
+          from services.user_service import UserService
+          service = UserService()
+          user = service.create_user(user_data)
+      
+      Author: John Doe <john.doe@example.com>
+      Created: 2024-01-15
+      Version: 1.2.0
+      """
+      
+      import logging
+      from typing import Dict, Optional
+      
+      from .models import User
+      from .services import EmailService
+      from .utils import validators
+      
+      logger = logging.getLogger(__name__)
+      ```
+
+      **JavaScript/TypeScript File Headers:**
+      ```javascript
+      /**
+       * User Service Module
+       * 
+       * Purpose: Business logic for user management operations
+       * Dependencies: models/User, services/EmailService, utils/validators
+       * 
+       * This module provides user creation, authentication, and profile
+       * management functionality with comprehensive error handling.
+       * 
+       * @example
+       * import UserService from './services/UserService';
+       * const service = new UserService();
+       * const user = await service.createUser(userData);
+       * 
+       * @author John Doe <john.doe@example.com>
+       * @created 2024-01-15
+       * @version 1.2.0
+       */
+      
+      import { User } from '../models/User';
+      import { EmailService } from './EmailService';
+      import { validateEmail } from '../utils/validators';
+      ```
+
+  - type: suggest
+    when: "testing_standards"
+    message: |
+      **Testing Standards:**
+
+      **Test Structure (AAA Pattern):**
+      ```python
+      def test_user_creation_success():
+          # Arrange - Set up test data and dependencies
+          user_data = {
+              'email': 'test@example.com',
+              'name': 'Test User',
+              'password': 'testpass123'
+          }
+          mock_email_service = Mock()
+          user_service = UserService(email_service=mock_email_service)
+          
+          # Act - Execute the function being tested
+          result = user_service.create_user(user_data)
+          
+          # Assert - Verify the expected outcomes
+          assert result.email == user_data['email']
+          assert result.name == user_data['name']
+          mock_email_service.send_welcome_email.assert_called_once_with(result.email)
+      ```
+
+      **Test Naming Conventions:**
+      ```python
+      # Good test names
+      def test_create_user_with_valid_data_returns_user():
+      def test_create_user_with_existing_email_raises_error():
+      def test_user_password_is_hashed_on_creation():
+      
+      # Bad test names
+      def test_user():  # Too vague
+      def test_create():  # Missing context
+      def test_it_works():  # Not descriptive
+      ```
+
+      **Test Organization:**
+      ```
+      tests/
+      ├── unit/                     # Unit tests
+      │   ├── test_models.py
+      │   ├── test_services.py
+      │   └── test_utils.py
+      ├── integration/              # Integration tests
+      │   ├── test_api.py
+      │   └── test_database.py
+      └── fixtures/                 # Test data
+          ├── sample_users.json
+          └── test_models.pkl
+      ```
+
+  - type: suggest
+    when: "code_quality"
+    message: |
+      **Code Quality Standards:**
+
+      **Import Organization:**
+      ```python
+      # Standard library imports
+      import os
+      import sys
+      from datetime import datetime
+      from typing import List, Dict, Optional
+      
+      # Third-party imports
+      import django
+      from django.db import models
+      from django.contrib.auth import get_user_model
+      
+      # Local application imports
+      from .models import User, Profile
+      from .services import UserService
+      from .utils import helpers
+      ```
+
+      **Function Documentation:**
+      ```python
+      def create_user(user_data: Dict[str, Any]) -> User:
+          """
+          Create a new user with validation and email notification.
+          
+          Args:
+              user_data: Dictionary containing user information
+                  - email: User's email address
+                  - name: User's full name
+                  - password: User's password
+          
+          Returns:
+              User: Created user instance
+          
+          Raises:
+              ValidationError: If user data is invalid
+              BusinessLogicError: If user already exists
+          
+          Example:
+              user_data = {
+                  'email': 'user@example.com',
+                  'name': 'John Doe',
+                  'password': 'securepass123'
+              }
+              user = create_user(user_data)
+          """
+          # Implementation here
+          pass
+      ```
+
+      **Error Handling:**
+      ```python
+      def process_user_request(request_data: Dict) -> Dict:
+          try:
+              # Validate input
+              if not validate_request(request_data):
+                  raise ValidationError("Invalid request data")
+              
+              # Process request
+              result = process_data(request_data)
+              
+              logger.info(f"Successfully processed request: {request_data['id']}")
+              return result
+              
+          except ValidationError as e:
+              logger.warning(f"Validation error: {e}")
+              raise
+          except Exception as e:
+              logger.error(f"Unexpected error: {e}")
+              raise ProcessingError(f"Failed to process request: {str(e)}")
+      ```
+
+  - type: suggest
+    when: "development_workflow"
+    message: |
+      **Development Workflow:**
+
+      **Feature Development Process:**
+      1. **Create Feature Branch:**
+         ```bash
+         git checkout -b feature/user-authentication
+         ```
+
+      2. **Follow Development Standards:**
+         - Write tests first (TDD approach)
+         - Follow naming conventions
+         - Add comprehensive documentation
+         - Ensure code quality standards
+
+      3. **Run Quality Checks:**
+         ```bash
+         # Run linting
+         flake8 src/
+         black --check src/
+         
+         # Run tests
+         pytest
+         
+         # Check coverage
+         pytest --cov=src --cov-report=term-missing
+         ```
+
+      4. **Commit Changes:**
+         ```bash
+         git add .
+         git commit -m "feat(auth): add JWT token authentication"
+         ```
+
+      5. **Create Pull Request:**
+         - Include comprehensive description
+         - Link related issues
+         - Request code review
+
+      **Code Review Checklist:**
+      - [ ] Code follows project standards
+      - [ ] Tests are included and passing
+      - [ ] Documentation is updated
+      - [ ] No security vulnerabilities
+      - [ ] Performance considerations addressed
+      - [ ] Error handling is comprehensive
+
+examples:
+  - input: |
+      # Poor commit message
+      git commit -m "fix bug"
+    output: "Use conventional commit format: fix(scope): specific description"
+
+  - input: |
+      # Poor file naming
+      userService.py
+    output: "Use snake_case for Python files: user_service.py"
+
+  - input: |
+      # Missing file header
+      import os
+      import sys
+    output: "Add comprehensive file header documentation"
+
+  - input: |
+      # Poor test structure
+      def test_user():
+          user = User()
+          assert user
+    output: "Use AAA pattern and descriptive test names"
+
+metadata:
+  priority: high
+  version: 1.0
+</rule>
+description:
+globs:
+alwaysApply: false
+---
