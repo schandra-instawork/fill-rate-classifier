@@ -1,6 +1,9 @@
 # Classification Rules Configuration
 # This file defines the rules for classifying fill rate issues
 # Rules are evaluated in order, and multiple rules can match
+#
+# Dependencies: src/classification/rules_loader.py
+# Used by: src/classification/recommendation_classifier.py
 
 # Version control for rule compatibility
 version: "1.0.0"

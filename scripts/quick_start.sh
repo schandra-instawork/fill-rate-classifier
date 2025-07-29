@@ -1,16 +1,14 @@
 #!/bin/bash
-"""
-Quick start script for Fill Rate Classifier.
-
-This script sets up everything you need for development:
-- Activates virtual environment
-- Installs/updates packages
-- Loads environment variables
-- Sets up Python path
-
-Usage:
-    source scripts/quick_start.sh
-"""
+# Quick start script for Fill Rate Classifier.
+#
+# This script sets up everything you need for development:
+# - Activates virtual environment
+# - Installs/updates packages
+# - Loads environment variables
+# - Sets up Python path
+#
+# Usage:
+#     source scripts/quick_start.sh
 
 # Source the main setup script
 source "$(dirname "$0")/setup_env.sh"

@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """
 Test script to verify intelligent application of Cursor rules
+
+Dependencies: cursor_rules_validator.py, .cursor/rules/ directory
+
+This script tests the intelligent features of Cursor rules including
+context awareness, conditional actions, and smart pattern matching.
 """
 
 import json

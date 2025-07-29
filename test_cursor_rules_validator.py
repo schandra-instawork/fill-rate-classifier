@@ -11,6 +11,9 @@ from cursor_rules_validator import (
 )
 
 # Comprehensive tests for Cursor rules validator functionality
+#
+# Dependencies: cursor_rules_validator.py
+# Tests: All functions in cursor_rules_validator module
 
 
 class TestCursorRulesValidator(unittest.TestCase):

@@ -5,6 +5,8 @@ Virtual environment diagnostic and fix script.
 This script checks if the virtual environment is properly set up
 and fixes common issues like missing packages or broken environments.
 
+Dependencies: requirements.txt in project root
+
 Usage:
     python scripts/fix_venv.py
 """

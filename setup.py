@@ -3,6 +3,9 @@ Setup configuration for Fill Rate Classifier
 
 This file configures the package for installation and distribution.
 It defines package metadata, dependencies, and entry points.
+
+Dependencies: README.md, requirements.txt
+Used by: pip install, deployment scripts
 """
 
 from setuptools import setup, find_packages

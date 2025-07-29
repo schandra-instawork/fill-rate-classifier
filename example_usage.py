@@ -4,6 +4,8 @@ Example usage of the Cursor Rules Validator
 
 This script demonstrates how to use the cursor_rules_validator functions
 to validate and manage Cursor rule files in your project.
+
+Dependencies: cursor_rules_validator.py, .cursor/rules/ directory
 """
 
 from cursor_rules_validator import (

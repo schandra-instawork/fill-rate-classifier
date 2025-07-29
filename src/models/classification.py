@@ -1,7 +1,7 @@
 """
 Module: models.classification
 Purpose: Defines classification results and confidence scoring
-Dependencies: pydantic, datetime, typing, enum
+Dependencies: None (base model)
 
 This module contains models for classification results, including
 the two-tier classification system (Email vs Action) and confidence

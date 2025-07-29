@@ -2,7 +2,7 @@
 Utils Package
 
 Purpose: Utility functions and helpers for the fill rate classifier
-Dependencies: Various based on specific utilities
+Dependencies: src/utils/experiment_tracking.py
 
 This package provides common utilities used across the application including:
 - Logging configuration

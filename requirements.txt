@@ -1,3 +1,31 @@
+# Fill Rate Classifier Dependencies
+#
+# This file lists all Python package dependencies for the Fill Rate Classifier project.
+# Dependencies are pinned to specific versions for reproducible builds.
+#
+# Dependencies: None (dependency specification)
+# Used by: scripts/fix_venv.py, setup.py, deployment scripts
+#
+# Core dependencies:
+# - pydantic: Data validation and settings management
+# - fastapi: Web framework for API development
+# - requests: HTTP library for API calls
+# - python-dotenv: Environment variable management
+#
+# Data processing:
+# - pandas: Data manipulation and analysis
+# - numpy: Numerical computing
+#
+# Testing:
+# - pytest: Testing framework
+# - pytest-asyncio: Async testing support
+# - Faker: Test data generation
+# - hypothesis: Property-based testing
+#
+# Development tools:
+# - uvicorn: ASGI server for FastAPI
+# - PyYAML: YAML configuration parsing
+
 annotated-types==0.7.0
 anyio==4.9.0
 attrs==25.3.0

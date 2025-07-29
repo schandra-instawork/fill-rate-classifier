@@ -5,6 +5,8 @@ Development setup script for Fill Rate Classifier.
 This script automatically loads environment variables and sets up
 the development environment so you don't need to manually source them.
 
+Dependencies: .env file in project root
+
 Usage:
     python scripts/dev_setup.py
     # or

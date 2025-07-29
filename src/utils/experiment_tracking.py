@@ -1,7 +1,7 @@
 """
 Module: utils.experiment_tracking
 Purpose: Utilities for experiment tracking and evaluation
-Dependencies: pandas, sqlite3, json, datetime
+Dependencies: src/models/experiments.py
 
 This module provides utilities for tracking classification experiments,
 storing results, and evaluating performance over time.

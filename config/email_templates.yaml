@@ -1,5 +1,8 @@
 # Email Templates Configuration
 # Templates for automated email communications based on classifications
+#
+# Dependencies: None (configuration file)
+# Used by: src/classification/recommendation_classifier.py (for template selection)
 
 version: "1.0.0"
 

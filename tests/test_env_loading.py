@@ -3,6 +3,8 @@ Test environment variable loading functionality.
 
 This test verifies that environment variables are automatically
 loaded when running tests, so you don't need to manually source them.
+
+Dependencies: tests/conftest.py, .env file in project root
 """
 
 import os

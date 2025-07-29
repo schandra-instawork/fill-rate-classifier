@@ -1,6 +1,9 @@
 # Application Configuration
 # This file contains all application-wide settings and parameters
 # Environment-specific values should be set via environment variables
+#
+# Dependencies: None (configuration file)
+# Used by: src/api/server.py, src/classification/recommendation_classifier.py
 
 app:
   name: "Fill Rate Classifier"

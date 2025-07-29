@@ -6,6 +6,8 @@ This module provides:
 - Common test fixtures
 - Database setup/teardown
 - Mock configurations
+
+Dependencies: .env file in project root, src/models/ for test data
 """
 
 import os

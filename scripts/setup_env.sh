@@ -1,15 +1,13 @@
 #!/bin/bash
-"""
-Quick environment setup script for Fill Rate Classifier.
-
-This script loads environment variables and activates the virtual environment
-so you can start development immediately.
-
-Usage:
-    source scripts/setup_env.sh
-    # or
-    . scripts/setup_env.sh
-"""
+# Quick environment setup script for Fill Rate Classifier.
+#
+# This script loads environment variables and activates the virtual environment
+# so you can start development immediately.
+#
+# Usage:
+#     source scripts/setup_env.sh
+#     # or
+#     . scripts/setup_env.sh
 
 set -e  # Exit on any error
 

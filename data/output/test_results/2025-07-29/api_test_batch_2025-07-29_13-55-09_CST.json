@@ -1,0 +1,504 @@
+{
+  "batch_info": {
+    "batch_start_time_cst": "2025-07-29T13:55:09.433278-05:00",
+    "date": "2025-07-29",
+    "time": "13:55:09 CST",
+    "endpoint": "/api/v1/sc-fill-rate-company",
+    "method": "POST",
+    "batch_end_time_cst": "2025-07-29T13:55:10.059934-05:00",
+    "duration_seconds": 0.626656,
+    "total_companies_tested": 10,
+    "successful_tests": 10,
+    "failed_tests": 0,
+    "companies_tested": [
+      "1112",
+      "2905",
+      "971",
+      "1047",
+      "4695",
+      "4813",
+      "2848",
+      "11611",
+      "11644",
+      "11735"
+    ]
+  },
+  "test_results": [
+    {
+      "company_id": "1112",
+      "test_timestamp_cst": "2025-07-29T13:55:09.877672-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1138",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"1112\",\n  \"company_name\": \"Sharon Heights Golf & Country Club\",\n  \"tier\": \"Tier 3\",\n  \"account_manager\": \"Mayur Mistry\",\n  \"analysis\": \"Fill rate analysis for Sharon Heights Golf & Country Club (ID: 1112)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with Sharon Heights Golf & Country Club to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for Sharon Heights Golf & Country Club and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Sharon Heights Golf & Country Club's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:09.876020\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "1112"
+        }
+      },
+      "parsed_data": {
+        "company_id": "1112",
+        "company_name": "Sharon Heights Golf & Country Club",
+        "tier": "Tier 3",
+        "account_manager": "Mayur Mistry",
+        "analysis": "Fill rate analysis for Sharon Heights Golf & Country Club (ID: 1112)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Schedule quarterly business review with Sharon Heights Golf & Country Club to discuss fill rate optimization strategies",
+            "priority": "high",
+            "confidence": 0.92
+          },
+          {
+            "type": "action",
+            "action": "Analyze shift patterns for Sharon Heights Golf & Country Club and identify peak demand periods",
+            "priority": "medium",
+            "confidence": 0.88
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Sharon Heights Golf & Country Club's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:09.876020",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "2905",
+      "test_timestamp_cst": "2025-07-29T13:55:09.897266-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1028",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"2905\",\n  \"company_name\": \"Starfire Golf Club\",\n  \"tier\": \"Tier 4\",\n  \"account_manager\": \"Kamel Zeidan\",\n  \"analysis\": \"Fill rate analysis for Starfire Golf Club (ID: 2905)\",\n  \"fill_rate_status\": \"Needs Attention\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Reach out to Starfire Golf Club about their recent low fill rates and offer support\",\n      \"priority\": \"high\",\n      \"confidence\": 0.85\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Review and potentially adjust pricing structure for better worker attraction\",\n      \"priority\": \"high\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Starfire Golf Club's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:09.896082\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "2905"
+        }
+      },
+      "parsed_data": {
+        "company_id": "2905",
+        "company_name": "Starfire Golf Club",
+        "tier": "Tier 4",
+        "account_manager": "Kamel Zeidan",
+        "analysis": "Fill rate analysis for Starfire Golf Club (ID: 2905)",
+        "fill_rate_status": "Needs Attention",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Reach out to Starfire Golf Club about their recent low fill rates and offer support",
+            "priority": "high",
+            "confidence": 0.85
+          },
+          {
+            "type": "action",
+            "action": "Review and potentially adjust pricing structure for better worker attraction",
+            "priority": "high",
+            "confidence": 0.9
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Starfire Golf Club's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:09.896082",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "971",
+      "test_timestamp_cst": "2025-07-29T13:55:09.916631-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "569",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"971\",\n  \"company_name\": \"Jane\",\n  \"tier\": NaN,\n  \"account_manager\": \"Mayur Mistry\",\n  \"analysis\": \"Fill rate analysis for Jane (ID: 971)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Jane's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:09.915187\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "971"
+        }
+      },
+      "parsed_data": {
+        "company_id": "971",
+        "company_name": "Jane",
+        "tier": NaN,
+        "account_manager": "Mayur Mistry",
+        "analysis": "Fill rate analysis for Jane (ID: 971)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Jane's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:09.915187",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "1047",
+      "test_timestamp_cst": "2025-07-29T13:55:09.936139-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "574",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"1047\",\n  \"company_name\": \"Tapex\",\n  \"tier\": NaN,\n  \"account_manager\": \"Kamel Zeidan\",\n  \"analysis\": \"Fill rate analysis for Tapex (ID: 1047)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Tapex's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:09.934979\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "1047"
+        }
+      },
+      "parsed_data": {
+        "company_id": "1047",
+        "company_name": "Tapex",
+        "tier": NaN,
+        "account_manager": "Kamel Zeidan",
+        "analysis": "Fill rate analysis for Tapex (ID: 1047)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Tapex's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:09.934979",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "4695",
+      "test_timestamp_cst": "2025-07-29T13:55:09.958724-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1012",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"4695\",\n  \"company_name\": \"D Squared\",\n  \"tier\": \"Tier 3\",\n  \"account_manager\": \"Kati Ciraci\",\n  \"analysis\": \"Fill rate analysis for D Squared (ID: 4695)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with D Squared to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for D Squared and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for D Squared's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:09.957688\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "4695"
+        }
+      },
+      "parsed_data": {
+        "company_id": "4695",
+        "company_name": "D Squared",
+        "tier": "Tier 3",
+        "account_manager": "Kati Ciraci",
+        "analysis": "Fill rate analysis for D Squared (ID: 4695)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Schedule quarterly business review with D Squared to discuss fill rate optimization strategies",
+            "priority": "high",
+            "confidence": 0.92
+          },
+          {
+            "type": "action",
+            "action": "Analyze shift patterns for D Squared and identify peak demand periods",
+            "priority": "medium",
+            "confidence": 0.88
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for D Squared's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:09.957688",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "4813",
+      "test_timestamp_cst": "2025-07-29T13:55:09.982265-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1045",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"4813\",\n  \"company_name\": \"Beachside Bakery\",\n  \"tier\": \"Tier 3\",\n  \"account_manager\": \"Amer Awad\",\n  \"analysis\": \"Fill rate analysis for Beachside Bakery (ID: 4813)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with Beachside Bakery to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for Beachside Bakery and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Beachside Bakery's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:09.981288\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "4813"
+        }
+      },
+      "parsed_data": {
+        "company_id": "4813",
+        "company_name": "Beachside Bakery",
+        "tier": "Tier 3",
+        "account_manager": "Amer Awad",
+        "analysis": "Fill rate analysis for Beachside Bakery (ID: 4813)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Schedule quarterly business review with Beachside Bakery to discuss fill rate optimization strategies",
+            "priority": "high",
+            "confidence": 0.92
+          },
+          {
+            "type": "action",
+            "action": "Analyze shift patterns for Beachside Bakery and identify peak demand periods",
+            "priority": "medium",
+            "confidence": 0.88
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Beachside Bakery's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:09.981288",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "2848",
+      "test_timestamp_cst": "2025-07-29T13:55:10.002278-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1003",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"2848\",\n  \"company_name\": \"Thistle\",\n  \"tier\": \"Tier 2\",\n  \"account_manager\": \"Mayur Mistry\",\n  \"analysis\": \"Fill rate analysis for Thistle (ID: 2848)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with Thistle to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for Thistle and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Thistle's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:10.001248\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "2848"
+        }
+      },
+      "parsed_data": {
+        "company_id": "2848",
+        "company_name": "Thistle",
+        "tier": "Tier 2",
+        "account_manager": "Mayur Mistry",
+        "analysis": "Fill rate analysis for Thistle (ID: 2848)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Schedule quarterly business review with Thistle to discuss fill rate optimization strategies",
+            "priority": "high",
+            "confidence": 0.92
+          },
+          {
+            "type": "action",
+            "action": "Analyze shift patterns for Thistle and identify peak demand periods",
+            "priority": "medium",
+            "confidence": 0.88
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Thistle's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:10.001248",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "11611",
+      "test_timestamp_cst": "2025-07-29T13:55:10.021309-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1047",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"11611\",\n  \"company_name\": \"Haute Chefs Los Angeles\",\n  \"tier\": \"Tier 4\",\n  \"account_manager\": \"Amer Awad\",\n  \"analysis\": \"Fill rate analysis for Haute Chefs Los Angeles (ID: 11611)\",\n  \"fill_rate_status\": \"Needs Attention\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Reach out to Haute Chefs Los Angeles about their recent low fill rates and offer support\",\n      \"priority\": \"high\",\n      \"confidence\": 0.85\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Review and potentially adjust pricing structure for better worker attraction\",\n      \"priority\": \"high\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Haute Chefs Los Angeles's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:10.020342\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "11611"
+        }
+      },
+      "parsed_data": {
+        "company_id": "11611",
+        "company_name": "Haute Chefs Los Angeles",
+        "tier": "Tier 4",
+        "account_manager": "Amer Awad",
+        "analysis": "Fill rate analysis for Haute Chefs Los Angeles (ID: 11611)",
+        "fill_rate_status": "Needs Attention",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Reach out to Haute Chefs Los Angeles about their recent low fill rates and offer support",
+            "priority": "high",
+            "confidence": 0.85
+          },
+          {
+            "type": "action",
+            "action": "Review and potentially adjust pricing structure for better worker attraction",
+            "priority": "high",
+            "confidence": 0.9
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Haute Chefs Los Angeles's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:10.020342",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "11644",
+      "test_timestamp_cst": "2025-07-29T13:55:10.040550-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1110",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"11644\",\n  \"company_name\": \"Oakland Marriott City Center\",\n  \"tier\": \"Tier 3\",\n  \"account_manager\": \"Bryan Garcia\",\n  \"analysis\": \"Fill rate analysis for Oakland Marriott City Center (ID: 11644)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with Oakland Marriott City Center to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for Oakland Marriott City Center and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Oakland Marriott City Center's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:10.039289\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "11644"
+        }
+      },
+      "parsed_data": {
+        "company_id": "11644",
+        "company_name": "Oakland Marriott City Center",
+        "tier": "Tier 3",
+        "account_manager": "Bryan Garcia",
+        "analysis": "Fill rate analysis for Oakland Marriott City Center (ID: 11644)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Schedule quarterly business review with Oakland Marriott City Center to discuss fill rate optimization strategies",
+            "priority": "high",
+            "confidence": 0.92
+          },
+          {
+            "type": "action",
+            "action": "Analyze shift patterns for Oakland Marriott City Center and identify peak demand periods",
+            "priority": "medium",
+            "confidence": 0.88
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Oakland Marriott City Center's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:10.039289",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "11735",
+      "test_timestamp_cst": "2025-07-29T13:55:10.059825-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:55:08 GMT",
+          "server": "uvicorn",
+          "content-length": "1000",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"11735\",\n  \"company_name\": \"Filson\",\n  \"tier\": \"Tier 3\",\n  \"account_manager\": \"Mayur Mistry\",\n  \"analysis\": \"Fill rate analysis for Filson (ID: 11735)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with Filson to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for Filson and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Filson's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:55:10.058868\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "11735"
+        }
+      },
+      "parsed_data": {
+        "company_id": "11735",
+        "company_name": "Filson",
+        "tier": "Tier 3",
+        "account_manager": "Mayur Mistry",
+        "analysis": "Fill rate analysis for Filson (ID: 11735)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Schedule quarterly business review with Filson to discuss fill rate optimization strategies",
+            "priority": "high",
+            "confidence": 0.92
+          },
+          {
+            "type": "action",
+            "action": "Analyze shift patterns for Filson and identify peak demand periods",
+            "priority": "medium",
+            "confidence": 0.88
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Filson's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:55:10.058868",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    }
+  ]
+}

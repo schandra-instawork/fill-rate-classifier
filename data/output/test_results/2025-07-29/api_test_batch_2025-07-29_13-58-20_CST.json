@@ -1,0 +1,182 @@
+SON Viewer{
+  "batch_info": {
+    "batch_start_time_cst": "2025-07-29T13:58:20.082881-05:00",
+    "date": "2025-07-29",
+    "time": "13:58:20 CST",
+    "endpoint": "/api/v1/sc-fill-rate-company",
+    "method": "POST",
+    "batch_end_time_cst": "2025-07-29T13:58:20.533350-05:00",
+    "duration_seconds": 0.450469,
+    "total_companies_tested": 2,
+    "successful_tests": 2,
+    "failed_tests": 0,
+    "companies_tested": [
+      "1112",
+      "2905"
+    ]
+  },
+  "test_results": [
+    {
+      "company_id": "1112",
+      "test_timestamp_cst": "2025-07-29T13:58:20.515032-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:58:19 GMT",
+          "server": "uvicorn",
+          "content-length": "1138",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"1112\",\n  \"company_name\": \"Sharon Heights Golf & Country Club\",\n  \"tier\": \"Tier 3\",\n  \"account_manager\": \"Mayur Mistry\",\n  \"analysis\": \"Fill rate analysis for Sharon Heights Golf & Country Club (ID: 1112)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with Sharon Heights Golf & Country Club to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for Sharon Heights Golf & Country Club and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Sharon Heights Golf & Country Club's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:58:20.513551\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}",
+          "output_parsed": {
+            "company_id": "1112",
+            "company_name": "Sharon Heights Golf & Country Club",
+            "tier": "Tier 3",
+            "account_manager": "Mayur Mistry",
+            "analysis": "Fill rate analysis for Sharon Heights Golf & Country Club (ID: 1112)",
+            "fill_rate_status": "Moderate Performance",
+            "recommendations": [
+              {
+                "type": "email",
+                "action": "Schedule quarterly business review with Sharon Heights Golf & Country Club to discuss fill rate optimization strategies",
+                "priority": "high",
+                "confidence": 0.92
+              },
+              {
+                "type": "action",
+                "action": "Analyze shift patterns for Sharon Heights Golf & Country Club and identify peak demand periods",
+                "priority": "medium",
+                "confidence": 0.88
+              },
+              {
+                "type": "action",
+                "action": "Update worker pool targeting for Sharon Heights Golf & Country Club's location and shift types",
+                "priority": "medium",
+                "confidence": 0.87
+              }
+            ],
+            "generated_at": "2025-07-29T18:58:20.513551",
+            "model_version": "sc-fill-rate-v1.0"
+          },
+          "output_raw": "{\n  \"company_id\": \"1112\",\n  \"company_name\": \"Sharon Heights Golf & Country Club\",\n  \"tier\": \"Tier 3\",\n  \"account_manager\": \"Mayur Mistry\",\n  \"analysis\": \"Fill rate analysis for Sharon Heights Golf & Country Club (ID: 1112)\",\n  \"fill_rate_status\": \"Moderate Performance\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Schedule quarterly business review with Sharon Heights Golf & Country Club to discuss fill rate optimization strategies\",\n      \"priority\": \"high\",\n      \"confidence\": 0.92\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Analyze shift patterns for Sharon Heights Golf & Country Club and identify peak demand periods\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.88\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Sharon Heights Golf & Country Club's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:58:20.513551\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "1112"
+        }
+      },
+      "parsed_data": {
+        "company_id": "1112",
+        "company_name": "Sharon Heights Golf & Country Club",
+        "tier": "Tier 3",
+        "account_manager": "Mayur Mistry",
+        "analysis": "Fill rate analysis for Sharon Heights Golf & Country Club (ID: 1112)",
+        "fill_rate_status": "Moderate Performance",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Schedule quarterly business review with Sharon Heights Golf & Country Club to discuss fill rate optimization strategies",
+            "priority": "high",
+            "confidence": 0.92
+          },
+          {
+            "type": "action",
+            "action": "Analyze shift patterns for Sharon Heights Golf & Country Club and identify peak demand periods",
+            "priority": "medium",
+            "confidence": 0.88
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Sharon Heights Golf & Country Club's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:58:20.513551",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    },
+    {
+      "company_id": "2905",
+      "test_timestamp_cst": "2025-07-29T13:58:20.533267-05:00",
+      "raw_api_response": {
+        "status_code": 200,
+        "headers": {
+          "date": "Tue, 29 Jul 2025 18:58:19 GMT",
+          "server": "uvicorn",
+          "content-length": "1028",
+          "content-type": "application/json"
+        },
+        "response_body": {
+          "output": "{\n  \"company_id\": \"2905\",\n  \"company_name\": \"Starfire Golf Club\",\n  \"tier\": \"Tier 4\",\n  \"account_manager\": \"Kamel Zeidan\",\n  \"analysis\": \"Fill rate analysis for Starfire Golf Club (ID: 2905)\",\n  \"fill_rate_status\": \"Needs Attention\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Reach out to Starfire Golf Club about their recent low fill rates and offer support\",\n      \"priority\": \"high\",\n      \"confidence\": 0.85\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Review and potentially adjust pricing structure for better worker attraction\",\n      \"priority\": \"high\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Starfire Golf Club's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:58:20.532412\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}",
+          "output_parsed": {
+            "company_id": "2905",
+            "company_name": "Starfire Golf Club",
+            "tier": "Tier 4",
+            "account_manager": "Kamel Zeidan",
+            "analysis": "Fill rate analysis for Starfire Golf Club (ID: 2905)",
+            "fill_rate_status": "Needs Attention",
+            "recommendations": [
+              {
+                "type": "email",
+                "action": "Reach out to Starfire Golf Club about their recent low fill rates and offer support",
+                "priority": "high",
+                "confidence": 0.85
+              },
+              {
+                "type": "action",
+                "action": "Review and potentially adjust pricing structure for better worker attraction",
+                "priority": "high",
+                "confidence": 0.9
+              },
+              {
+                "type": "action",
+                "action": "Update worker pool targeting for Starfire Golf Club's location and shift types",
+                "priority": "medium",
+                "confidence": 0.87
+              }
+            ],
+            "generated_at": "2025-07-29T18:58:20.532412",
+            "model_version": "sc-fill-rate-v1.0"
+          },
+          "output_raw": "{\n  \"company_id\": \"2905\",\n  \"company_name\": \"Starfire Golf Club\",\n  \"tier\": \"Tier 4\",\n  \"account_manager\": \"Kamel Zeidan\",\n  \"analysis\": \"Fill rate analysis for Starfire Golf Club (ID: 2905)\",\n  \"fill_rate_status\": \"Needs Attention\",\n  \"recommendations\": [\n    {\n      \"type\": \"email\",\n      \"action\": \"Reach out to Starfire Golf Club about their recent low fill rates and offer support\",\n      \"priority\": \"high\",\n      \"confidence\": 0.85\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Review and potentially adjust pricing structure for better worker attraction\",\n      \"priority\": \"high\",\n      \"confidence\": 0.9\n    },\n    {\n      \"type\": \"action\",\n      \"action\": \"Update worker pool targeting for Starfire Golf Club's location and shift types\",\n      \"priority\": \"medium\",\n      \"confidence\": 0.87\n    }\n  ],\n  \"generated_at\": \"2025-07-29T18:58:20.532412\",\n  \"model_version\": \"sc-fill-rate-v1.0\"\n}"
+        },
+        "request_body": {
+          "input": "2905"
+        }
+      },
+      "parsed_data": {
+        "company_id": "2905",
+        "company_name": "Starfire Golf Club",
+        "tier": "Tier 4",
+        "account_manager": "Kamel Zeidan",
+        "analysis": "Fill rate analysis for Starfire Golf Club (ID: 2905)",
+        "fill_rate_status": "Needs Attention",
+        "recommendations": [
+          {
+            "type": "email",
+            "action": "Reach out to Starfire Golf Club about their recent low fill rates and offer support",
+            "priority": "high",
+            "confidence": 0.85
+          },
+          {
+            "type": "action",
+            "action": "Review and potentially adjust pricing structure for better worker attraction",
+            "priority": "high",
+            "confidence": 0.9
+          },
+          {
+            "type": "action",
+            "action": "Update worker pool targeting for Starfire Golf Club's location and shift types",
+            "priority": "medium",
+            "confidence": 0.87
+          }
+        ],
+        "generated_at": "2025-07-29T18:58:20.532412",
+        "model_version": "sc-fill-rate-v1.0"
+      },
+      "success": true
+    }
+  ]
+}

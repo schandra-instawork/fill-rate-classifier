@@ -2,7 +2,10 @@
 Fill Rate Classifier Package
 
 Purpose: Root package for the fill rate classification system
-Dependencies: None at package level
+Dependencies: src/models/, src/api/, src/classification/, src/evaluation/, src/utils/
+
+This package serves as the main entry point for the fill rate
+classification system, providing access to all core modules.
 """
 
 __version__ = "0.1.0"

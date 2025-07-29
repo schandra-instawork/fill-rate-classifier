@@ -1,7 +1,7 @@
 """
 Module: models.company
 Purpose: Defines the Company entity and related metrics
-Dependencies: pydantic, datetime, typing, enum
+Dependencies: None (base model)
 
 This module contains the data models for companies and their associated
 fill rate metrics. All models use Pydantic for automatic validation

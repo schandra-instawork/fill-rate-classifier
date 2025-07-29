@@ -1,7 +1,7 @@
 """
 Module: classification.recommendation_classifier
 Purpose: Classifies fill rate recommendations into actionable categories
-Dependencies: Claude API client, classification models
+Dependencies: src/api/claude_client.py, src/models/classification.py
 
 This module uses Claude to intelligently classify recommendations from
 the Fill Rate Analysis API into specific action categories.

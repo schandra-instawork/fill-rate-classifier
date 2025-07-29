@@ -123,3 +123,1334 @@ INFO:     Started server process [59294]
 INFO:     Waiting for application startup.
 INFO:src.api.server:Fill Rate Classifier API started successfully
 INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [59294]
+INFO:     Started server process [59737]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1112
+INFO:src.api.server:Found company info: Sharon Heights Golf & Country Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1112
+INFO:     127.0.0.1:51117 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2905
+INFO:src.api.server:Found company info: Starfire Golf Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2905
+INFO:     127.0.0.1:51120 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 971
+INFO:src.api.server:Found company info: Jane
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 971
+INFO:     127.0.0.1:51122 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1047
+INFO:src.api.server:Found company info: Tapex
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1047
+INFO:     127.0.0.1:51124 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 4695
+INFO:src.api.server:Found company info: D Squared
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 4695
+INFO:     127.0.0.1:51126 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 4813
+INFO:src.api.server:Found company info: Beachside Bakery
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 4813
+INFO:     127.0.0.1:51128 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2848
+INFO:src.api.server:Found company info: Thistle
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2848
+INFO:     127.0.0.1:51130 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11611
+INFO:src.api.server:Found company info: Haute Chefs Los Angeles
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11611
+INFO:     127.0.0.1:51132 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11644
+INFO:src.api.server:Found company info: Oakland Marriott City Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11644
+INFO:     127.0.0.1:51134 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11735
+INFO:src.api.server:Found company info: Filson
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11735
+INFO:     127.0.0.1:51136 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [59737]
+INFO:     Started server process [60039]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60039]
+INFO:     Started server process [60080]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60080]
+INFO:     Started server process [60419]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1112
+INFO:src.api.server:Found company info: Sharon Heights Golf & Country Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1112
+INFO:     127.0.0.1:51486 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2905
+INFO:src.api.server:Found company info: Starfire Golf Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2905
+INFO:     127.0.0.1:51488 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 971
+INFO:src.api.server:Found company info: Jane
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 971
+INFO:     127.0.0.1:51490 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1047
+INFO:src.api.server:Found company info: Tapex
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1047
+INFO:     127.0.0.1:51492 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 4695
+INFO:src.api.server:Found company info: D Squared
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 4695
+INFO:     127.0.0.1:51494 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 4813
+INFO:src.api.server:Found company info: Beachside Bakery
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 4813
+INFO:     127.0.0.1:51496 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2848
+INFO:src.api.server:Found company info: Thistle
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2848
+INFO:     127.0.0.1:51498 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11611
+INFO:src.api.server:Found company info: Haute Chefs Los Angeles
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11611
+INFO:     127.0.0.1:51500 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11644
+INFO:src.api.server:Found company info: Oakland Marriott City Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11644
+INFO:     127.0.0.1:51502 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11735
+INFO:src.api.server:Found company info: Filson
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11735
+INFO:     127.0.0.1:51504 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60419]
+INFO:     Started server process [60827]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1112
+INFO:src.api.server:Found company info: Sharon Heights Golf & Country Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1112
+INFO:     127.0.0.1:51781 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2905
+INFO:src.api.server:Found company info: Starfire Golf Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2905
+INFO:     127.0.0.1:51783 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'test_simple.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [60827]
+INFO:     Started server process [61000]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'test_simple.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61000]
+INFO:     Started server process [61286]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61286]
+INFO:     Started server process [61296]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/models/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61296]
+INFO:     Started server process [61306]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/api/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61306]
+INFO:     Started server process [61331]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/classification/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61331]
+INFO:     Started server process [61346]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/utils/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61346]
+INFO:     Started server process [61391]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/models/company.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61391]
+INFO:     Started server process [61435]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/models/classification.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61435]
+INFO:     Started server process [61447]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/api/client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61447]
+INFO:     Started server process [61461]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/classification/recommendation_classifier.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61461]
+INFO:     Started server process [61470]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'src/utils/experiment_tracking.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61470]
+INFO:     Started server process [61480]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/dev_setup.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61480]
+INFO:     Started server process [61492]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/fix_venv.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61492]
+INFO:     Started server process [61507]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61507]
+INFO:     Started server process [61557]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/test_sc_api.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61557]
+INFO:     Started server process [61567]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/conftest.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61567]
+INFO:     Started server process [61581]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/test_env_loading.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61581]
+INFO:     Started server process [61591]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'example_usage.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61591]
+INFO:     Started server process [62260]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'test_intelligent_rules.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [62260]
+INFO:     Started server process [62278]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'test_cursor_rules_validator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [62278]
+INFO:     Started server process [62340]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'setup.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [62340]
+INFO:     Started server process [62367]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 37183
+INFO:src.api.server:Found company info: Capitol Foods
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 37183
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 41131
+INFO:src.api.server:Found company info: Aramark - Arrowhead Stadium
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 41131
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 73318
+INFO:src.api.server:Found company info: Streakwave Wireless Inc.
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 73318
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 71900
+INFO:src.api.server:Found company info: The Atriums Senior Living
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 71900
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 56780
+INFO:src.api.server:Found company info: Crothall - FISH Memorial Hospital
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 56780
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 89919
+INFO:src.api.server:Found company info: Pure Horizons, LLC
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 89919
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 83227
+INFO:src.api.server:Found company info: Tesla - Anaheim Hills CA
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 83227
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46445
+INFO:src.api.server:Found company info: Stunning and Brilliant Events Charlotte
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46445
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 62791
+INFO:src.api.server:Found company info: George Washington University - Student Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 62791
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 35824
+INFO:src.api.server:Found company info: Michel De France
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 35824
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48596
+INFO:src.api.server:Found company info: TForce Logistics - Tampa
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48596
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 33146
+INFO:src.api.server:Found company info: CORT - Houston
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 33146
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 62001
+INFO:src.api.server:Found company info: The Limited Hotel
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 62001
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39522
+INFO:src.api.server:Found company info: Aramark - Nat Bailey Stadium
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39522
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53214
+INFO:src.api.server:Found company info: Nora Cocina Catering
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53214
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 75652
+INFO:src.api.server:Found company info: Shack Shine
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 75652
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 38737
+INFO:src.api.server:Found company info: Restaurant Depot - Marietta GA
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 38737
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 76330
+INFO:src.api.server:Found company info: Citi Mortgage – St. Louis - Aramark
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 76330
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48618
+INFO:src.api.server:Found company info: Aramark - Coppell ISD
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48618
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 56692
+INFO:src.api.server:Found company info: Courtyard by Marriott Pittsburgh Greensburg | Concord
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 56692
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 44020
+INFO:src.api.server:Found company info: Eurest at MilliporeSigma
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 44020
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 54064
+INFO:src.api.server:Found company info: SSC - Middle Tennessee State University
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 54064
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 69532
+INFO:src.api.server:Found company info: FLIK @ Bayer Creve Coeur
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 69532
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 55951
+INFO:src.api.server:Found company info: Little Caesars Arena - DN
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 55951
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 61901
+INFO:src.api.server:Found company info: Buffalo Convention Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 61901
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58028
+INFO:src.api.server:Found company info: A Superior Cleaning Services LLC
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58028
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 84592
+INFO:src.api.server:Found company info: Canteen - Farmers Insurance Kansas City
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 84592
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 29227
+INFO:src.api.server:Found company info: Tesla Markham Ontario
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 29227
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 49249
+INFO:src.api.server:Found company info: Fillogic - Tanger Outlets
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 49249
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39975
+INFO:src.api.server:Found company info: Guckenheimer - New England BioLabs
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39975
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 78086
+INFO:src.api.server:Found company info: Carolina University
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 78086
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 21746
+INFO:src.api.server:Found company info: Cafe Valley
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 21746
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57534
+INFO:src.api.server:Found company info: Holiday Inn & Suites - Farmington Hills
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57534
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48597
+INFO:src.api.server:Found company info: TForce Logistics - Orlando
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48597
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 71525
+INFO:src.api.server:Found company info: Dave & Buster's Houston - Katy Fwy
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 71525
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39415
+INFO:src.api.server:Found company info: The Rental Plug
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39415
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 44996
+INFO:src.api.server:Found company info: DoubleTree by Hilton Hotel Washington DC - Silver Spring
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 44996
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 60615
+INFO:src.api.server:Found company info: University of Minnesota - Bailey Dining Hall
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 60615
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53520
+INFO:src.api.server:Found company info: America's Center Convention Complex
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53520
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 34325
+INFO:src.api.server:Found company info: AC Hotel by Marriott Austin Hill Country
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 34325
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 78693
+INFO:src.api.server:Found company info: Shamrock Trading Company - Aramark
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 78693
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 55507
+INFO:src.api.server:Found company info: Sheraton Valley Forge Hotel
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 55507
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57790
+INFO:src.api.server:Found company info: Radiant Global Logistics - Phoenix
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57790
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 36410
+INFO:src.api.server:Found company info: Guckenheimer Hangar 17
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 36410
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 68441
+INFO:src.api.server:Found company info: Highland Cabinetry
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 68441
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 67610
+INFO:src.api.server:Found company info: JohnDow Industrial
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 67610
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 73825
+INFO:src.api.server:Found company info: Home City Ice - Pittsburgh
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 73825
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 43547
+INFO:src.api.server:Found company info: Canopy by Hilton Washington DC Embassy Row
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 43547
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 15371
+INFO:src.api.server:Found company info: City Club LA - Club Corp
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 15371
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 72369
+INFO:src.api.server:Found company info: Garden State Growers
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 72369
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 61751
+INFO:src.api.server:Found company info: Onyx Event Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 61751
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 73321
+INFO:src.api.server:Found company info: Northwell Health at Jones Beach Theater - Legends
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 73321
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 41645
+INFO:src.api.server:Found company info: Summer Camp
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 41645
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 45829
+INFO:src.api.server:Found company info: The Gathering Spot
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 45829
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 42876
+INFO:src.api.server:Found company info: Palm Beach Country Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 42876
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39782
+INFO:src.api.server:Found company info: CHS Field
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39782
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 47468
+INFO:src.api.server:Found company info: Hughes Supply
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 47468
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 55183
+INFO:src.api.server:Found company info: SP Plus - Baltimore
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 55183
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 63138
+INFO:src.api.server:Found company info: New Orleans Marriott
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 63138
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46309
+INFO:src.api.server:Found company info: WorldPac - Mount Vernon NY
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46309
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57080
+INFO:src.api.server:Found company info: Content Recovery Specialists of Louisville
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57080
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 86807
+INFO:src.api.server:Found company info: Mastercard - NYC Tech Hub
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 86807
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 63850
+INFO:src.api.server:Found company info: Beckton Dickinson Covington - FLIK
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 63850
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 30039
+INFO:src.api.server:Found company info: City Experiences Navy Pier
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 30039
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 52980
+INFO:src.api.server:Found company info: House of Blues Las Vegas
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 52980
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 40415
+INFO:src.api.server:Found company info: Embassy Suites by Hilton Seattle Bellevue
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 40415
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 32963
+INFO:src.api.server:Found company info: The Fillmore Philadelphia - Wolfgang Puck
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 32963
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 76656
+INFO:src.api.server:Found company info: University of Tennessee at Chattanooga
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 76656
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 75459
+INFO:src.api.server:Found company info: Florida Southern College -  Dining Services
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 75459
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48091
+INFO:src.api.server:Found company info: KL Chempak
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48091
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 22296
+INFO:src.api.server:Found company info: Core Mark
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 22296
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 45208
+INFO:src.api.server:Found company info: Delnor Hospital
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 45208
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 32891
+INFO:src.api.server:Found company info: Morrison Living - The Covington
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 32891
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 60313
+INFO:src.api.server:Found company info: Beth Israel Deaconess Hospital-Milton - Sodexo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 60313
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 65375
+INFO:src.api.server:Found company info: Venetian - Guest Services
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 65375
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 47364
+INFO:src.api.server:Found company info: Uptown Lights
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 47364
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 64521
+INFO:src.api.server:Found company info: Flagship Culinary Services - Meta Forest City
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 64521
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 45222
+INFO:src.api.server:Found company info: Brandeis University - Aramark
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 45222
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 33619
+INFO:src.api.server:Found company info: Intellifreight
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 33619
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 69263
+INFO:src.api.server:Found company info: CORT - Cincinnati (CFR)
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 69263
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 84071
+INFO:src.api.server:Found company info: MSCO- Northern Tier
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 84071
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58319
+INFO:src.api.server:Found company info: Hyatt Place Columbus/Dublin
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58319
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 83531
+INFO:src.api.server:Found company info: Brett Carey Region - Sodexo Senior Living
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 83531
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 45554
+INFO:src.api.server:Found company info: Fernish
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 45554
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58158
+INFO:src.api.server:Found company info: Colorado School of Mines - Catering Department
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58158
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 60294
+INFO:src.api.server:Found company info: Interstate Parking - Minneapolis
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 60294
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 65080
+INFO:src.api.server:Found company info: Crescent Crown Distributing - New Orleans
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 65080
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 33530
+INFO:src.api.server:Found company info: Donald E. Stephens Convention Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 33530
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 54228
+INFO:src.api.server:Found company info: IHG Army Hotels Candlewood Suites
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 54228
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 49055
+INFO:src.api.server:Found company info: SLG Systems - Nashville
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 49055
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 79933
+INFO:src.api.server:Found company info: American Food & Vending - Visions Federal Credit Union - NY
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 79933
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39624
+INFO:src.api.server:Found company info: Folklore Event Rentals Inc.
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39624
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 41283
+INFO:src.api.server:Found company info: A Taste of Elegance, Catering & Events
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 41283
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 96861
+INFO:src.api.server:Found company info: Capstone - Midwest
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 96861
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 42933
+INFO:src.api.server:Found company info: The Field Museum - Levy
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 42933
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 52854
+INFO:src.api.server:Found company info: Messina's Catering & Events
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 52854
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58265
+INFO:src.api.server:Found company info: North Hills Skilled Nursing and Rehabilitation Center - Sodexo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58265
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 42002
+INFO:src.api.server:Found company info: Atherton - Morrison Living
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 42002
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 60451
+INFO:src.api.server:Found company info: Accordius Health at Gastonia- EVS
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 60451
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 55950
+INFO:src.api.server:Found company info: Comerica Park - DN
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 55950
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 74627
+INFO:src.api.server:Found company info: CSC-NJ
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 74627
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 33589
+INFO:src.api.server:Found company info: Fable Home
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 33589
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 63124
+INFO:src.api.server:Found company info: Sacred Heart University Catering - Chartwells
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 63124
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48255
+INFO:src.api.server:Found company info: Corporate Chefs @ The US Court Cafe
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48255
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57722
+INFO:src.api.server:Found company info: Holiday Inn Fredericksburg Conference Ctr
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57722
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 18190
+INFO:src.api.server:Found company info: TPC Scottsdale
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 18190
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 72471
+INFO:src.api.server:Found company info: Wolfgang Puck- Premera Blue Cross
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 72471
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 40257
+INFO:src.api.server:Found company info: FLIK Hospitality at Los Angeles United Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 40257
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46118
+INFO:src.api.server:Found company info: Delta Hotel by Marriott Anaheim Garden Grove
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46118
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 72889
+INFO:src.api.server:Found company info: Weby
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 72889
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58917
+INFO:src.api.server:Found company info: Mall of America - Waste & Recycling
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58917
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 67197
+INFO:src.api.server:Found company info: Webster University-Dining - Sodexo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 67197
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 15308
+INFO:src.api.server:Found company info: Exclusive Chefs
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 15308
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57039
+INFO:src.api.server:Found company info: The Westin Los Angeles Airport
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57039
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 38923
+INFO:src.api.server:Found company info: The Chateau Anna Maria
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 38923
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 37117
+INFO:src.api.server:Found company info: Regis University
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 37117
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 76135
+INFO:src.api.server:Found company info: LVK Logistics - DFW
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 76135
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 47849
+INFO:src.api.server:Found company info: Joy Wallace Catering
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 47849
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 15225
+INFO:src.api.server:Found company info: San Diego Marriott La Jolla
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 15225
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 68924
+INFO:src.api.server:Found company info: Duke Energy Plaza - Canteen Vending
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 68924
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 40949
+INFO:src.api.server:Found company info: Stadium People
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 40949
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 50405
+INFO:src.api.server:Found company info: CORT - New Orleans
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 50405
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53303
+INFO:src.api.server:Found company info: Phoenix Rising FC-Craft Culinary
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53303
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 62652
+INFO:src.api.server:Found company info: WorldPac - Salt Lake City UT
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 62652
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 37969
+INFO:src.api.server:Found company info: ABM - Pechanga Arena
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 37969
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 40283
+INFO:src.api.server:Found company info: Donaldson - MN
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 40283
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 49930
+INFO:src.api.server:Found company info: Future Forwarding - HQ
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 49930
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58912
+INFO:src.api.server:Found company info: NexDine - Lions Gate
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58912
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 95830
+INFO:src.api.server:Found company info: SSC - Palm Beach Atlantic University
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 95830
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 12247
+INFO:src.api.server:Found company info: Continental Catering
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 12247
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 56150
+INFO:src.api.server:Found company info: Fairfield Inn & Suites by Marriott Louisville Jeffersonville
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 56150
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 19935
+INFO:src.api.server:Found company info: Atlantic Frozen Foods
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 19935
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 14081
+INFO:src.api.server:Found company info: Occidental College
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 14081
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 66228
+INFO:src.api.server:Found company info: Avantara Lake Zurich- Next Level
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 66228
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 47213
+INFO:src.api.server:Found company info: Bay Stage Live
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 47213
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 34178
+INFO:src.api.server:Found company info: DUER
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 34178
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 33411
+INFO:src.api.server:Found company info: Agnes Scott College
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 33411
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 35052
+INFO:src.api.server:Found company info: Shore LBK
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 35052
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 42298
+INFO:src.api.server:Found company info: Hyatt Regency Santa Clara
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 42298
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58374
+INFO:src.api.server:Found company info: University of Delaware - Whitney Athletic Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58374
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 69392
+INFO:src.api.server:Found company info: Bon Appetit @ Uber, Mission Bay (SF)
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 69392
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 67108
+INFO:src.api.server:Found company info: Guckenheimer at Google in The Dalles
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 67108
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 63622
+INFO:src.api.server:Found company info: Hotel Indigo Frisco
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 63622
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 14577
+INFO:src.api.server:Found company info: Perfect Settings
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 14577
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53547
+INFO:src.api.server:Found company info: Dinner With A View
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53547
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58813
+INFO:src.api.server:Found company info: Convene - Etc.Venues - 360 Madison
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58813
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46304
+INFO:src.api.server:Found company info: WorldPac - San Mateo CA
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46304
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 49449
+INFO:src.api.server:Found company info: W Atlanta-Downtown
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 49449
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39354
+INFO:src.api.server:Found company info: Eurest at Amazon - Grace - Cafe
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39354
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11428
+INFO:src.api.server:Found company info: Bel-Air Bay Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11428
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 50912
+INFO:src.api.server:Found company info: Ferguson Renovations - South
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 50912
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 42627
+INFO:src.api.server:Found company info: DTG Recycling Group Renton
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 42627
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 52393
+INFO:src.api.server:Found company info: Banner Island Ballpark
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 52393
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 52536
+INFO:src.api.server:Found company info: Sheraton Overland Park Hotel at the Convention Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 52536
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 40729
+INFO:src.api.server:Found company info: Valero HQ
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 40729
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39082
+INFO:src.api.server:Found company info: Restaurant Associates at Metlife
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39082
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 78073
+INFO:src.api.server:Found company info: The Homestead at Anoka, Inc DBA the Homestead at Anoka
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 78073
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 45245
+INFO:src.api.server:Found company info: Constellation Culinary Philadelphia
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 45245
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 37866
+INFO:src.api.server:Found company info: Unidine Revel Province
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 37866
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 42093
+INFO:src.api.server:Found company info: SOS Entertainment
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 42093
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 71920
+INFO:src.api.server:Found company info: Doubletree Hilton Roseville
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 71920
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 85047
+INFO:src.api.server:Found company info: ALABAMA A&M - Facilities
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 85047
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 61653
+INFO:src.api.server:Found company info: RingCentral - Aramark
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 61653
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53554
+INFO:src.api.server:Found company info: British Airway at SeaTac - Sodexo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53554
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 40459
+INFO:src.api.server:Found company info: Studio Movie Grill - Lincoln
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 40459
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 50412
+INFO:src.api.server:Found company info: University of Houston- Clear Lake
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 50412
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 43778
+INFO:src.api.server:Found company info: Tao Chicago
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 43778
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 67947
+INFO:src.api.server:Found company info: Canteen Vending - Madison
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 67947
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39285
+INFO:src.api.server:Found company info: Aramark - PPG Paints Arena
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39285
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 59399
+INFO:src.api.server:Found company info: CP - Fresh
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 59399
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39358
+INFO:src.api.server:Found company info: Sinai Residences
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39358
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 59687
+INFO:src.api.server:Found company info: Nazareth University - Sodexo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 59687
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 71752
+INFO:src.api.server:Found company info: TForce Logistics - Dallas
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 71752
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 18160
+INFO:src.api.server:Found company info: The Empanada Shop Redondo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 18160
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 55754
+INFO:src.api.server:Found company info: Spouting Rock Beach Association
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 55754
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 26002
+INFO:src.api.server:Found company info: BradyPlus North American Corp. - Chicago
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 26002
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 69741
+INFO:src.api.server:Found company info: Fiserv-Atlanta - Sodexo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 69741
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 21028
+INFO:src.api.server:Found company info: Dunn Edwards
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 21028
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 61241
+INFO:src.api.server:Found company info: Beth Israel Deaconess Medical Center-Boston - Sodexo
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 61241
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 41890
+INFO:src.api.server:Found company info: AxleHire, Inc.
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 41890
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 44379
+INFO:src.api.server:Found company info: The Mather Evanston
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 44379
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 47858
+INFO:src.api.server:Found company info: Pelican Golf Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 47858
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 73116
+INFO:src.api.server:Found company info: Bon Appetit - SNAP NYC
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 73116
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 65815
+INFO:src.api.server:Found company info: BMG Industries Inc. DBA 72Hours
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 65815
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39943
+INFO:src.api.server:Found company info: Pittsburgh Zoo & Aquarium | SSA Group
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39943
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46961
+INFO:src.api.server:Found company info: Bon Appetit @ Best Buy
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46961
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 41486
+INFO:src.api.server:Found company info: LSG Sky Chefs Phoenix
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 41486
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 47649
+INFO:src.api.server:Found company info: Restaurant Associates at Google Chicago
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 47649
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58639
+INFO:src.api.server:Found company info: Residence Inn La Mirada Buena Park
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58639
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 43297
+INFO:src.api.server:Found company info: Bon Appetit @ Pepperdine University
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 43297
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 54341
+INFO:src.api.server:Found company info: Morrison Senior Living - Towson
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 54341
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46117
+INFO:src.api.server:Found company info: Morrison @ Santa Rosa Memorial Hospital
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46117
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 39065
+INFO:src.api.server:Found company info: Shaklee Groveport
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 39065
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 55697
+INFO:src.api.server:Found company info: Aramark - Baylor Beauchamp Dining Facility
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 55697
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 94368
+INFO:src.api.server:Found company info: Gaylord Rockies
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 94368
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 27089
+INFO:src.api.server:Found company info: The Doral Yard
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 27089
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 38797
+INFO:src.api.server:Found company info: Restaurant Associates at Trip Advisor
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 38797
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 67717
+INFO:src.api.server:Found company info: CORT - Virginia Beach (CFR)
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 67717
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48936
+INFO:src.api.server:Found company info: TPC Prestancia
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48936
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 51139
+INFO:src.api.server:Found company info: Creative Food Group
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 51139
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 23869
+INFO:src.api.server:Found company info: Atlanta National Golf Club - Club Corp
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 23869
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 28327
+INFO:src.api.server:Found company info: Core-Mark - Forrest City
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 28327
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 42483
+INFO:src.api.server:Found company info: The Nicotra Group
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 42483
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 38271
+INFO:src.api.server:Found company info: Restaurant Depot - Davie FL
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 38271
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 66026
+INFO:src.api.server:Found company info: University of Texas at Austin - Dining
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 66026
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 64157
+INFO:src.api.server:Found company info: ASM Global - SAVOR...
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 64157
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 56205
+INFO:src.api.server:Found company info: Arbol Residences of Santa Rosa
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 56205
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 65213
+INFO:src.api.server:Found company info: SSA Group - Corporate Dining
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 65213
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46025
+INFO:src.api.server:Found company info: WorldPac - South Austin TX
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46025
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53527
+INFO:src.api.server:Found company info: Levy Restaurants Culinary @ BCEC/Hynes Convention Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53527
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 52896
+INFO:src.api.server:Found company info: Tanger Center - OVG
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 52896
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53951
+INFO:src.api.server:Found company info: LightHouse for the Blind and Visually Impaired
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53951
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 49389
+INFO:src.api.server:Found company info: Boulder Ponds Senior Living
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 49389
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 14779
+INFO:src.api.server:Found company info: Bon Appetit- Santa Clara University
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 14779
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58868
+INFO:src.api.server:Found company info: New World Symphony
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58868
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 75260
+INFO:src.api.server:Found company info: Event 360
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 75260
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 61552
+INFO:src.api.server:Found company info: Five Star Food Service - Dayton
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 61552
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 16635
+INFO:src.api.server:Found company info: Hotel Hollywood Roosevelt
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 16635
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58462
+INFO:src.api.server:Found company info: Aramark Facilities - Samsung - Irving
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58462
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 70369
+INFO:src.api.server:Found company info: Stonehill College - Cafe Bon Appetit
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 70369
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58315
+INFO:src.api.server:Found company info: The Inn on West Liberty
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58315
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57612
+INFO:src.api.server:Found company info: Land Sea Air Manufacturing
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57612
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 74385
+INFO:src.api.server:Found company info: gategroup - Chicago (ORD)
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 74385
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 59514
+INFO:src.api.server:Found company info: Family A Fair Inc
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 59514
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48315
+INFO:src.api.server:Found company info: Ayanna Plastics & Engineering, Inc.
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48315
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 58328
+INFO:src.api.server:Found company info: Wyndham Avon
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 58328
+INFO:     127.0.0.1:52649 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 43852
+INFO:src.api.server:Found company info: Aramark - Gates
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 43852
+INFO:     127.0.0.1:52633 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 65493
+INFO:src.api.server:Found company info: Grand Bohemian Hotel Mountain Brook
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 65493
+INFO:     127.0.0.1:52660 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 60045
+INFO:src.api.server:Found company info: Aramark - T-Mobile Corporate Office
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 60045
+INFO:     127.0.0.1:52665 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 75340
+INFO:src.api.server:Found company info: CORT - Chicago (CFR)
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 75340
+INFO:     127.0.0.1:52670 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 37280
+INFO:src.api.server:Found company info: Bargreen-Ellingson - Fort Worth
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 37280
+INFO:     127.0.0.1:52666 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57894
+INFO:src.api.server:Found company info: WorldPac - Richmond VA
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57894
+INFO:     127.0.0.1:52662 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 51410
+INFO:src.api.server:Found company info: Gardens & Gardens
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 51410
+INFO:     127.0.0.1:52645 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 46774
+INFO:src.api.server:Found company info: Druid Hills Golf Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 46774
+INFO:     127.0.0.1:52661 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 69485
+INFO:src.api.server:Found company info: Aramark - Boeing St. Louis
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 69485
+INFO:     127.0.0.1:52669 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 59083
+INFO:src.api.server:Found company info: Mami Que Rico LLC
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 59083
+INFO:     127.0.0.1:52639 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 55359
+INFO:src.api.server:Found company info: Treyburn Country Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 55359
+INFO:     127.0.0.1:52658 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 41913
+INFO:src.api.server:Found company info: WorldPac - Van Nuys CA
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 41913
+INFO:     127.0.0.1:52667 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 60746
+INFO:src.api.server:Found company info: Magnolia Event Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 60746
+INFO:     127.0.0.1:52635 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 53457
+INFO:src.api.server:Found company info: Fairfax Marriott at Fair Oaks
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 53457
+INFO:     127.0.0.1:52653 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 48682
+INFO:src.api.server:Found company info: Ace Mart Restaurant Supply
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 48682
+INFO:     127.0.0.1:52663 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 61740
+INFO:src.api.server:Found company info: Magnit - Nordstrom
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 61740
+INFO:     127.0.0.1:52651 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 57275
+INFO:src.api.server:Found company info: Hotline Delivery Systems
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 57275
+INFO:     127.0.0.1:52647 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 86090
+INFO:src.api.server:Found company info: Holy Caramel
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 86090
+INFO:     127.0.0.1:52643 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 78321
+INFO:src.api.server:Found company info: Restaurant Associates - Google - Pittsburgh
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 78321
+INFO:     127.0.0.1:52664 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 56660
+INFO:src.api.server:Found company info: Tesla - Ann Arbor MI
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 56660
+INFO:     127.0.0.1:52668 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 49132
+INFO:src.api.server:Found company info: The Rose Schnitzer Manor at Cedar Sinai Park
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 49132
+INFO:     127.0.0.1:52641 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 84664
+INFO:src.api.server:Found company info: GES - Los Angeles
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 84664
+INFO:     127.0.0.1:52637 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 60607
+INFO:src.api.server:Found company info: Hyatt House/Hyatt Place Houston Medical Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 60607
+INFO:     127.0.0.1:52655 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11612
+INFO:src.api.server:Found company info: Bon Appetit @ Disney
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11612
+INFO:     127.0.0.1:52659 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK

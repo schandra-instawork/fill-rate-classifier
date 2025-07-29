@@ -2,7 +2,7 @@
 Models Package
 
 Purpose: Data models and schemas for the fill rate classifier
-Dependencies: pydantic for validation, datetime for timestamps
+Dependencies: src/models/company.py, src/models/classification.py, src/models/experiments.py, src/models/schemas.py
 
 This package provides strongly-typed data models with built-in validation
 for all entities in the fill rate classification system.

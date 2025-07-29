@@ -1,7 +1,7 @@
 """
 Module: api.client
 Purpose: Handles all communication with the fill rate prediction API
-Dependencies: requests, tenacity (for retries), pydantic, logging
+Dependencies: src/models/schemas.py, src/models/company.py
 
 This module provides a resilient API client that:
 - Handles authentication and rate limiting

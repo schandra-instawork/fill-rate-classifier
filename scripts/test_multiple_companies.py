@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """
 Test script to show API output for multiple companies and save outputs with CST timestamps
+
+Dependencies: data/raw/company_ids_and_other.csv, data/output/ directory structure
+
+This script processes multiple companies through the API and saves
+detailed results with timestamps for analysis.
 """
 
 import requests
@@ -27,42 +32,85 @@ def create_output_directory() -> Path:
     
     return output_dir
 
-def save_raw_output(company_id: str, raw_response: dict, parsed_data: dict, output_dir: Path):
-    """Save raw API response and parsed data to files"""
-    cst_now = get_cst_timestamp()
-    timestamp_str = cst_now.strftime("%H-%M-%S")
+class TestBatchCollector:
+    """Collects all test results for a single batch file"""
     
-    # Save raw API response
-    raw_filename = f"company_{company_id}_raw_{timestamp_str}.json"
-    raw_filepath = output_dir / raw_filename
+    def __init__(self):
+        self.batch_start_time = get_cst_timestamp()
+        self.test_results = []
+        self.batch_info = {
+            "batch_start_time_cst": self.batch_start_time.isoformat(),
+            "date": self.batch_start_time.strftime("%Y-%m-%d"),
+            "time": self.batch_start_time.strftime("%H:%M:%S CST"),
+            "endpoint": "/api/v1/sc-fill-rate-company",
+            "method": "POST"
+        }
     
-    with open(raw_filepath, 'w') as f:
-        json.dump({
-            "timestamp_cst": cst_now.isoformat(),
+    def add_test_result(self, company_id: str, raw_response: dict, parsed_data: dict):
+        """Add a single test result to the batch"""
+        test_timestamp = get_cst_timestamp()
+        
+        # Format the raw response for better readability
+        formatted_raw_response = raw_response.copy()
+        
+        # If the response body contains an 'output' field with JSON string, parse it
+        if (isinstance(raw_response.get('response_body'), dict) and 
+            'output' in raw_response['response_body']):
+            
+            try:
+                # Parse the JSON string in the output field
+                output_json = json.loads(raw_response['response_body']['output'])
+                
+                # Replace the escaped JSON string with parsed JSON for readability
+                formatted_raw_response['response_body'] = {
+                    **raw_response['response_body'],
+                    'output_parsed': output_json,  # Add parsed version
+                    'output_raw': raw_response['response_body']['output']  # Keep original
+                }
+                
+            except json.JSONDecodeError:
+                # If parsing fails, keep original
+                formatted_raw_response = raw_response
+        
+        result = {
             "company_id": company_id,
-            "raw_api_response": raw_response,
-            "request_info": {
-                "endpoint": "/api/v1/sc-fill-rate-company",
-                "method": "POST",
-                "input": company_id
-            }
-        }, f, indent=2)
+            "test_timestamp_cst": test_timestamp.isoformat(),
+            "raw_api_response": formatted_raw_response,
+            "parsed_data": parsed_data,
+            "success": "error" not in parsed_data
+        }
+        
+        self.test_results.append(result)
     
-    # Save parsed data
-    parsed_filename = f"company_{company_id}_parsed_{timestamp_str}.json"
-    parsed_filepath = output_dir / parsed_filename
-    
-    with open(parsed_filepath, 'w') as f:
-        json.dump({
-            "timestamp_cst": cst_now.isoformat(),
-            "company_id": company_id,
-            "parsed_data": parsed_data
-        }, f, indent=2)
-    
-    return raw_filepath, parsed_filepath
+    def save_batch_file(self, output_dir: Path, company_ids: List[str]) -> Path:
+        """Save all results to a single batch file"""
+        batch_end_time = get_cst_timestamp()
+        
+        # Create comprehensive batch data
+        batch_data = {
+            "batch_info": {
+                **self.batch_info,
+                "batch_end_time_cst": batch_end_time.isoformat(),
+                "duration_seconds": (batch_end_time - self.batch_start_time).total_seconds(),
+                "total_companies_tested": len(company_ids),
+                "successful_tests": sum(1 for r in self.test_results if r["success"]),
+                "failed_tests": sum(1 for r in self.test_results if not r["success"]),
+                "companies_tested": company_ids
+            },
+            "test_results": self.test_results
+        }
+        
+        # Create filename with batch timestamp
+        filename = f"api_test_batch_{self.batch_start_time.strftime('%Y-%m-%d_%H-%M-%S')}_CST.json"
+        filepath = output_dir / filename
+        
+        with open(filepath, 'w') as f:
+            json.dump(batch_data, f, indent=2)
+        
+        return filepath
 
-def test_company(company_id: str, output_dir: Path, base_url: str = "http://localhost:8000", bearer_token: str = None):
-    """Test a single company and return parsed results, saving raw outputs"""
+def test_company(company_id: str, batch_collector: TestBatchCollector, base_url: str = "http://localhost:8000", bearer_token: str = None):
+    """Test a single company and return parsed results, adding to batch collector"""
     url = f"{base_url}/api/v1/sc-fill-rate-company"
     
     headers = {
@@ -75,7 +123,7 @@ def test_company(company_id: str, output_dir: Path, base_url: str = "http://loca
     try:
         response = requests.post(url, json=request_body, headers=headers, timeout=10)
         
-        # Always save the raw response
+        # Always collect the raw response
         raw_response = {
             "status_code": response.status_code,
             "headers": dict(response.headers),
@@ -88,34 +136,28 @@ def test_company(company_id: str, output_dir: Path, base_url: str = "http://loca
             if "output" in response_data:
                 parsed_data = json.loads(response_data["output"])
                 
-                # Save both raw and parsed data
-                raw_file, parsed_file = save_raw_output(company_id, raw_response, parsed_data, output_dir)
-                
-                # Add file paths to the returned data
-                parsed_data["_saved_files"] = {
-                    "raw_output": str(raw_file),
-                    "parsed_output": str(parsed_file)
-                }
+                # Add to batch collector
+                batch_collector.add_test_result(company_id, raw_response, parsed_data)
                 
                 return parsed_data
             else:
                 error_data = {"error": "Missing 'output' field in response"}
-                save_raw_output(company_id, raw_response, error_data, output_dir)
+                batch_collector.add_test_result(company_id, raw_response, error_data)
                 return error_data
         else:
             error_data = {"error": f"HTTP {response.status_code}: {response.text}"}
-            save_raw_output(company_id, raw_response, error_data, output_dir)
+            batch_collector.add_test_result(company_id, raw_response, error_data)
             return error_data
             
     except Exception as e:
         error_data = {"error": str(e)}
-        # Save error info too
+        # Add error info to batch
         error_response = {
             "status_code": "ERROR",
             "error": str(e),
             "request_body": request_body
         }
-        save_raw_output(company_id, error_response, error_data, output_dir)
+        batch_collector.add_test_result(company_id, error_response, error_data)
         return error_data
 
 def print_company_analysis(data: dict, index: int):
@@ -152,6 +194,12 @@ def print_company_analysis(data: dict, index: int):
         print()
 
 def main():
+    # Create output directory with CST date
+    output_dir = create_output_directory()
+    
+    # Initialize batch collector
+    batch_collector = TestBatchCollector()
+    
     # Test company IDs from the CSV
     company_ids = [
         "1112",  # Sharon Heights Golf & Country Club (Tier 3)
@@ -170,6 +218,8 @@ def main():
     
     print("🚀 TESTING SC FILL RATE COMPANY API")
     print("=" * 80)
+    print(f"📅 Test Date: {batch_collector.batch_info['date']} ({batch_collector.batch_info['time']})")
+    print(f"📁 Output Directory: {output_dir}")
     print(f"🔑 Using Bearer Token: {bearer_token[:20]}...")
     print(f"🎯 Testing {len(company_ids)} companies")
     
@@ -178,7 +228,7 @@ def main():
     for i, company_id in enumerate(company_ids, 1):
         print(f"\n⏳ Testing Company ID: {company_id}...")
         
-        result = test_company(company_id, bearer_token=bearer_token)
+        result = test_company(company_id, batch_collector, bearer_token=bearer_token)
         
         if "error" in result:
             print(f"❌ Error for Company {company_id}: {result['error']}")
@@ -186,8 +236,15 @@ def main():
             print_company_analysis(result, i)
             successful_tests += 1
     
+    # Save single batch file with all results
+    batch_file = batch_collector.save_batch_file(output_dir, company_ids)
+    
     print(f"\n{'='*80}")
     print(f"✅ SUMMARY: {successful_tests}/{len(company_ids)} companies tested successfully")
+    print(f"📁 Output Directory: {output_dir}")
+    print(f"📄 Single Batch File: {batch_file.name}")
+    print(f"💾 Full Path: {batch_file}")
+    print(f"⏱️  Batch Duration: {batch_collector.test_results[-1]['test_timestamp_cst'] if batch_collector.test_results else 'N/A'}")
     print(f"{'='*80}")
 
 if __name__ == "__main__":

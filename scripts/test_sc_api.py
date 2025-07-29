@@ -4,6 +4,11 @@ Test script for SC Fill Rate Company API endpoint
 
 This script tests the /api/v1/sc-fill-rate-company endpoint
 to ensure it's working correctly.
+
+Dependencies: src/api/server.py (if testing locally)
+
+Usage:
+    python scripts/test_sc_api.py
 """
 
 import requests
