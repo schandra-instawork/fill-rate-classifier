@@ -163,10 +163,10 @@ metrics = evaluator.evaluate_batch(samples)
 
 2. **Set up environment (Choose one option)**
 
-   **Option A: Automatic Setup (Recommended)**
+   **Option A: Quick Start (Recommended)**
    ```bash
    # One command to set up everything
-   source scripts/setup_env.sh
+   source scripts/quick_start.sh
    ```
 
    **Option B: Manual Setup**
@@ -178,6 +178,9 @@ metrics = evaluator.evaluate_batch(samples)
    # Install dependencies
    pip install -r requirements.txt
    
+   # Run diagnostic and fix any issues
+   python scripts/fix_venv.py
+   
    # Load environment variables
    python scripts/dev_setup.py
    ```
@@ -186,6 +189,9 @@ metrics = evaluator.evaluate_batch(samples)
    ```bash
    # Environment variables are automatically loaded during tests
    python -m pytest
+   
+   # Or run diagnostic to check environment health
+   python scripts/fix_venv.py
    ```
 
 3. **Verify setup**

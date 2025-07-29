@@ -18,17 +18,19 @@ echo "🚀 Setting up Fill Rate Classifier environment..."
 # Get the project root directory
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-# Activate virtual environment
-if [ -d "$PROJECT_ROOT/venv" ]; then
-    echo "✅ Activating virtual environment..."
-    source "$PROJECT_ROOT/venv/bin/activate"
-else
-    echo "❌ Virtual environment not found. Please create it first:"
-    echo "   python3 -m venv venv"
-    echo "   source venv/bin/activate"
-    echo "   pip install -r requirements.txt"
-    exit 1
+# Check if virtual environment exists
+if [ ! -d "$PROJECT_ROOT/venv" ]; then
+    echo "📦 Creating virtual environment..."
+    python3 -m venv "$PROJECT_ROOT/venv"
 fi
+
+# Activate virtual environment
+echo "✅ Activating virtual environment..."
+source "$PROJECT_ROOT/venv/bin/activate"
+
+# Run diagnostic and fix any issues
+echo "🔍 Running environment diagnostic..."
+python "$PROJECT_ROOT/scripts/fix_venv.py"
 
 # Load environment variables using Python
 echo "✅ Loading environment variables..."
@@ -47,4 +49,6 @@ echo ""
 echo "🔧 Current environment:"
 echo "   PYTHONPATH: $PYTHONPATH"
 echo "   VIRTUAL_ENV: $VIRTUAL_ENV"
-echo "   ENVIRONMENT: $ENVIRONMENT" 
+echo "   ENVIRONMENT: $ENVIRONMENT"
+echo "   Python: $(which python)"
+echo "   Pip: $(which pip)" 

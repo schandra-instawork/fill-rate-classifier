@@ -33,3 +33,93 @@ INFO:     Application startup complete.
 INFO:src.api.server:Processing SC fill rate analysis for company: company_12345
 INFO:src.api.server:Successfully processed SC fill rate analysis for company company_12345
 INFO:     127.0.0.1:50003 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'src/api/server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [56411]
+INFO:     Started server process [57345]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1112
+ERROR:src.api.server:Error processing SC fill rate company analysis: No module named 'pandas'
+INFO:     127.0.0.1:50335 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 500 Internal Server Error
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1112
+ERROR:src.api.server:Error processing SC fill rate company analysis: 'company_id'
+INFO:     127.0.0.1:50411 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 500 Internal Server Error
+WARNING:  StatReload detected changes in 'scripts/fix_venv.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [57345]
+INFO:     Started server process [57933]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1112
+INFO:src.api.server:Found company info: Sharon Heights Golf & Country Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1112
+INFO:     127.0.0.1:50618 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2905
+INFO:src.api.server:Found company info: Starfire Golf Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2905
+INFO:     127.0.0.1:50654 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1112
+INFO:src.api.server:Found company info: Sharon Heights Golf & Country Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1112
+INFO:     127.0.0.1:50836 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2905
+INFO:src.api.server:Found company info: Starfire Golf Club
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2905
+INFO:     127.0.0.1:50838 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 971
+INFO:src.api.server:Found company info: Jane
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 971
+INFO:     127.0.0.1:50840 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 1047
+INFO:src.api.server:Found company info: Tapex
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 1047
+INFO:     127.0.0.1:50842 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 4695
+INFO:src.api.server:Found company info: D Squared
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 4695
+INFO:     127.0.0.1:50844 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 4813
+INFO:src.api.server:Found company info: Beachside Bakery
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 4813
+INFO:     127.0.0.1:50846 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 2848
+INFO:src.api.server:Found company info: Thistle
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 2848
+INFO:     127.0.0.1:50848 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11611
+INFO:src.api.server:Found company info: Haute Chefs Los Angeles
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11611
+INFO:     127.0.0.1:50850 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11644
+INFO:src.api.server:Found company info: Oakland Marriott City Center
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11644
+INFO:     127.0.0.1:50852 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+INFO:src.api.server:Processing SC fill rate analysis for company ID: 11735
+INFO:src.api.server:Found company info: Filson
+INFO:src.api.server:Successfully processed SC fill rate analysis for company 11735
+INFO:     127.0.0.1:50854 - "POST /api/v1/sc-fill-rate-company HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [57933]
+INFO:     Started server process [59236]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/test_multiple_companies.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [59236]
+INFO:     Started server process [59294]
+INFO:     Waiting for application startup.
+INFO:src.api.server:Fill Rate Classifier API started successfully
+INFO:     Application startup complete.
