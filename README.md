@@ -161,38 +161,37 @@ metrics = evaluator.evaluate_batch(samples)
    cd fill-rate-classifier
    ```
 
-2. **Set up environment**
+2. **Set up environment (Choose one option)**
+
+   **Option A: Automatic Setup (Recommended)**
    ```bash
-   # Copy environment template
-   cp .env.example .env
-   
-   # Edit environment variables
-   nano .env
+   # One command to set up everything
+   source scripts/setup_env.sh
    ```
 
-3. **Start with Docker**
-   ```bash
-   # Build and start services
-   docker-compose up -d
-   
-   # Run migrations
-   docker-compose exec app python manage.py migrate
-   
-   # Create superuser
-   docker-compose exec app python manage.py createsuperuser
-   ```
-
-4. **Install dependencies (local development)**
+   **Option B: Manual Setup**
    ```bash
    # Create virtual environment
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   python3 -m venv venv
+   source venv/bin/activate
    
    # Install dependencies
    pip install -r requirements.txt
    
-   # Install development dependencies
-   pip install -r requirements-dev.txt
+   # Load environment variables
+   python scripts/dev_setup.py
+   ```
+
+   **Option C: For Testing (Automatic)**
+   ```bash
+   # Environment variables are automatically loaded during tests
+   python -m pytest
+   ```
+
+3. **Verify setup**
+   ```bash
+   # Run tests to verify everything works
+   python -m pytest tests/test_env_loading.py -v
    ```
 
 ## 🚀 **Usage**

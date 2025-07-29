@@ -9,9 +9,11 @@ filters:
   - type: file_extension
     pattern: ".*"
   - type: content
-    pattern: "(git|commit|test|doc|header|naming|workflow)"
+    pattern: "(git|commit|test|doc|header|naming|workflow|co-authored|claude|gpt|ai|assisted)"
   - type: context
-    pattern: "(development|workflow|standards|quality)"
+    pattern: "(development|workflow|standards|quality|commit|attribution)"
+  - type: content
+    pattern: "(co-authored|claude|gpt|assisted by|ai helped|generated with)"
 
 actions:
   - type: suggest
@@ -51,6 +53,9 @@ actions:
       git commit -m "fix bug"
       git commit -m "update stuff"
       git commit -m "wip"
+      git commit -m "feat: add user auth - Co-authored-by: Claude"
+      git commit -m "fix: resolve issue with AI help"
+      git commit -m "docs: update README - assisted by GPT"
       ```
 
       **Commit Message Guidelines:**
@@ -59,6 +64,33 @@ actions:
       - Start with lowercase letter
       - No period at the end
       - Include scope for better categorization
+      - **NEVER include "Co-authored-by" or AI assistant attribution**
+      - **NEVER mention Claude, GPT, or any AI assistant in commits**
+      - **NEVER use "AI helped" or similar phrases**
+
+  - type: suggest
+    when: "ai_attribution_detected"
+    message: |
+      **🚫 AI Attribution Prohibited:**
+
+      **NEVER include AI assistant attribution in commit messages:**
+      - ❌ `Co-authored-by: Claude`
+      - ❌ `Co-authored-by: GPT`
+      - ❌ `Assisted by AI`
+      - ❌ `AI helped with this`
+      - ❌ `Generated with Claude`
+      - ❌ `Thanks to GPT`
+
+      **Why this matters:**
+      - Commit messages should reflect human authorship
+      - AI tools are development aids, not co-authors
+      - Maintains professional development practices
+      - Avoids potential legal/licensing complications
+
+      **Correct approach:**
+      - Write commit messages as if you authored the code
+      - Focus on what the commit accomplishes
+      - Keep attribution for actual human collaborators only
 
   - type: suggest
     when: "file_organization"
@@ -354,6 +386,16 @@ examples:
       # Poor commit message
       git commit -m "fix bug"
     output: "Use conventional commit format: fix(scope): specific description"
+
+  - input: |
+      # AI attribution in commit
+      git commit -m "feat: add auth - Co-authored-by: Claude"
+    output: "NEVER include AI assistant attribution in commit messages"
+
+  - input: |
+      # Mentioning AI in commit
+      git commit -m "fix: resolve issue with AI help"
+    output: "NEVER mention AI assistants in commit messages"
 
   - input: |
       # Poor file naming

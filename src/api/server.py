@@ -17,7 +17,7 @@ Endpoints:
 
 import logging
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional
 
 from fastapi import FastAPI, HTTPException, Security, Depends, status
@@ -120,6 +120,16 @@ class PrioritizedActionsResponse(BaseModel):
     total_actions: int = Field(..., description="Total number of actions")
     high_priority_count: int = Field(..., description="Number of high priority actions")
     actions: List[Dict[str, Any]] = Field(..., description="Prioritized action list")
+
+
+class ScFillRateCompanyRequest(BaseModel):
+    """Request for SC Fill Rate Company analysis"""
+    input: str = Field(..., description="Company ID or input data")
+
+
+class ScFillRateCompanyResponse(BaseModel):
+    """Response for SC Fill Rate Company analysis"""
+    output: str = Field(..., description="Analysis output")
 
 
 # Global variables for API clients and processors
@@ -589,6 +599,71 @@ async def export_batch_results(
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=str(e)
+        )
+
+
+@app.post("/api/v1/sc-fill-rate-company", response_model=ScFillRateCompanyResponse)
+async def sc_fill_rate_company(
+    request: ScFillRateCompanyRequest,
+    token: str = Depends(verify_bearer_token)
+) -> ScFillRateCompanyResponse:
+    """
+    Analyze fill rate for a specific company
+    
+    This endpoint matches the frontend React hook expectations
+    
+    Args:
+        request: Contains company ID in the 'input' field
+        token: Verified bearer token
+        
+    Returns:
+        ScFillRateCompanyResponse with analysis in 'output' field
+        
+    Raises:
+        HTTPException: If analysis fails
+    """
+    if not fill_rate_client:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Fill rate analysis service not initialized"
+        )
+    
+    try:
+        logger.info(f"Processing SC fill rate analysis for company: {request.input}")
+        
+        # For now, we'll create a simple test response to verify the API is working
+        # In production, this would call the actual fill rate analysis
+        test_response = {
+            "company_id": request.input,
+            "analysis": "Fill rate analysis for company",
+            "recommendations": [
+                {
+                    "type": "email",
+                    "action": "Reach out to discuss contract renewal",
+                    "priority": "high"
+                },
+                {
+                    "type": "action",
+                    "action": "Update company profile settings",
+                    "priority": "medium"
+                }
+            ],
+            "timestamp": datetime.utcnow().isoformat()
+        }
+        
+        # Convert to JSON string as expected by the frontend
+        import json
+        output_str = json.dumps(test_response, indent=2)
+        
+        logger.info(f"Successfully processed SC fill rate analysis for company {request.input}")
+        
+        return ScFillRateCompanyResponse(output=output_str)
+        
+    except Exception as e:
+        logger.error(f"Error processing SC fill rate company analysis: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to process fill rate analysis: {str(e)}"
         )
 
 

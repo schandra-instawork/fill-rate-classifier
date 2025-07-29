@@ -1,4 +1,5 @@
-en# Comprehensive Cursor Rules Collection
+en
+# Comprehensive Cursor Rules Collection
 
 A complete collection of Cursor rules for professional software development, covering all aspects from code quality to project management.
 
