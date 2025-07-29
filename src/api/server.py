@@ -655,17 +655,75 @@ async def sc_fill_rate_company(
                 company_info = company_row.iloc[0].to_dict()
                 logger.info(f"Found company info: {company_info['company_name']}")
         
-        # Generate mock fill rate analysis with real company data
+        # Generate fill rate analysis using Claude API
+        recommendations = []
+        
         if company_info:
             company_name = company_info.get('company_name', 'Unknown Company')
             tier = company_info.get('tier', 'Unknown')
             rep_name = company_info.get('rep_name', 'Unknown')
             
-            # Create more realistic recommendations based on tier
-            recommendations = []
-            
-            if tier in ['Tier 2', 'Tier 3']:
-                recommendations.extend([
+            # Try to get real analysis from Claude API
+            try:
+                # Create a comprehensive analysis prompt
+                analysis_prompt = f"""Analyze fill rate performance for {company_name} (company_id: {company_id}, {tier}).
+
+Based on typical issues for a {tier} partner in their industry, provide 3 specific recommendations:
+1. One email outreach recommendation for the account manager
+2. Two operational action items (could be shift patterns, worker pool targeting, pricing, geographic coverage, etc.)
+
+Make the recommendations specific to their business type and tier level. Vary the types of issues identified.
+
+Return in this JSON format:
+{{
+  "recommendations": [
+    {{"type": "email", "action": "...", "priority": "high", "confidence": 0.85}},
+    {{"type": "action", "action": "...", "priority": "medium", "confidence": 0.80}},  
+    {{"type": "action", "action": "...", "priority": "medium", "confidence": 0.75}}
+  ]
+}}"""
+
+                logger.info(f"Calling Claude API for dynamic recommendations for company {company_id}")
+                
+                # Use the direct Claude endpoint
+                import requests
+                claude_url = f"{fill_rate_client.base_url}/direct-claude/run"
+                headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {fill_rate_client.api_key}"
+                }
+                data = {"input": analysis_prompt}
+                
+                response = requests.post(claude_url, json=data, headers=headers, timeout=30)
+                
+                if response.status_code == 200:
+                    claude_result = response.json()
+                    claude_output = claude_result.get("output", "")
+                    
+                    # Parse the JSON response
+                    import json
+                    import re
+                    
+                    # Extract JSON from the response (it might be wrapped in markdown)
+                    json_match = re.search(r'\{.*\}', claude_output, re.DOTALL)
+                    if json_match:
+                        recommendations_data = json.loads(json_match.group())
+                        recommendations = recommendations_data.get("recommendations", [])
+                        logger.info(f"Successfully parsed {len(recommendations)} recommendations from Claude")
+                    else:
+                        logger.warning("Could not extract JSON from Claude response")
+                        raise ValueError("Invalid Claude response format")
+                        
+                else:
+                    logger.warning(f"Claude API call failed with status {response.status_code}")
+                    raise requests.RequestException(f"Claude API error: {response.status_code}")
+                    
+            except Exception as e:
+                logger.warning(f"Claude API analysis failed: {str(e)}")
+                logger.info("Falling back to simplified hardcoded recommendations")
+                
+                # Fallback to simple recommendations if Claude fails
+                recommendations = [
                     {
                         "type": "email",
                         "action": f"Schedule quarterly business review with {company_name} to discuss fill rate optimization strategies",
@@ -677,32 +735,14 @@ async def sc_fill_rate_company(
                         "action": f"Analyze shift patterns for {company_name} and identify peak demand periods",
                         "priority": "medium",
                         "confidence": 0.88
-                    }
-                ])
-            
-            if tier == 'Tier 4':
-                recommendations.extend([
-                    {
-                        "type": "email",
-                        "action": f"Reach out to {company_name} about their recent low fill rates and offer support",
-                        "priority": "high",
-                        "confidence": 0.85
                     },
                     {
                         "type": "action",
-                        "action": "Review and potentially adjust pricing structure for better worker attraction",
-                        "priority": "high",
-                        "confidence": 0.90
+                        "action": f"Update worker pool targeting for {company_name}'s location and shift types",
+                        "priority": "medium",
+                        "confidence": 0.87
                     }
-                ])
-            
-            # Add general recommendations
-            recommendations.append({
-                "type": "action",
-                "action": f"Update worker pool targeting for {company_name}'s location and shift types",
-                "priority": "medium",
-                "confidence": 0.87
-            })
+                ]
             
             analysis_response = {
                 "company_id": company_id,
