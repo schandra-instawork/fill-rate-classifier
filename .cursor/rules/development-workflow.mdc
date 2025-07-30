@@ -1,10 +1,10 @@
-# Development Workflow and Standards
+# Development Workflow Standards
 
-Comprehensive development workflow standards covering commits, file naming, documentation, and testing practices.
+Comprehensive development standards covering commits, file organization, documentation, testing, and code quality.
 
 <rule>
-name: development_workflow
-description: Development workflow standards including commits, file organization, documentation, and testing
+name: development_workflow_standards
+description: Development workflow standards including commits, file organization, documentation, testing, and code quality
 filters:
   - type: file_extension
     pattern: ".*"
@@ -17,13 +17,13 @@ filters:
 
 actions:
   - type: suggest
-    when: "commit_standards"
+    when: "commit_message"
     message: |
-      **Commit Standards:**
+      **📝 Commit Message Standards:**
 
-      **Conventional Commit Format:**
+      **Format:**
       ```
-      <type>(<scope>): <description>
+      type(scope): description
 
       [optional body]
 
@@ -34,31 +34,12 @@ actions:
       - `feat`: New feature
       - `fix`: Bug fix
       - `docs`: Documentation changes
-      - `style`: Code style changes
+      - `style`: Code style changes (formatting, etc.)
       - `refactor`: Code refactoring
-      - `perf`: Performance improvements
       - `test`: Adding or updating tests
       - `chore`: Maintenance tasks
 
-      **Examples:**
-      ```bash
-      # Good commits
-      feat(auth): add JWT token authentication
-      fix(api): resolve user creation validation issue
-      docs(readme): update installation instructions
-      test(user): add unit tests for user service
-      refactor(models): extract user validation logic
-      
-      # Bad commits
-      git commit -m "fix bug"
-      git commit -m "update stuff"
-      git commit -m "wip"
-      git commit -m "feat: add user auth - Co-authored-by: Claude"
-      git commit -m "fix: resolve issue with AI help"
-      git commit -m "docs: update README - assisted by GPT"
-      ```
-
-      **Commit Message Guidelines:**
+      **Rules:**
       - Use imperative mood ("add" not "added")
       - Keep subject line under 50 characters
       - Start with lowercase letter
@@ -67,6 +48,25 @@ actions:
       - **NEVER include "Co-authored-by" or AI assistant attribution**
       - **NEVER mention Claude, GPT, or any AI assistant in commits**
       - **NEVER use "AI helped" or similar phrases**
+
+      **Examples:**
+      ✅ Good:
+      ```
+      feat: add user authentication system
+      fix(api): resolve rate limiting issue
+      docs: update API documentation
+      test: add unit tests for classification
+      ```
+
+      ❌ Bad:
+      ```
+      git commit -m "fix bug"
+      git commit -m "update stuff"
+      git commit -m "wip"
+      git commit -m "feat: add user auth - Co-authored-by: Claude"
+      git commit -m "fix: resolve issue with AI help"
+      git commit -m "docs: update README - assisted by GPT"
+      ```
 
   - type: suggest
     when: "ai_attribution_detected"
@@ -95,331 +95,201 @@ actions:
   - type: suggest
     when: "file_organization"
     message: |
-      **File Organization Standards:**
-
-      **Python File Naming:**
-      ```python
-      # Use snake_case for Python files
-      user_models.py          # ✅ Good
-      user_services.py        # ✅ Good
-      test_user_models.py     # ✅ Good
-      
-      # Avoid these patterns
-      userModels.py           # ❌ camelCase
-      UserModels.py           # ❌ PascalCase
-      user-models.py          # ❌ kebab-case
-      ```
-
-      **JavaScript/TypeScript File Naming:**
-      ```javascript
-      // Use camelCase for JavaScript/TypeScript files
-      userService.js          # ✅ Good
-      userController.js       # ✅ Good
-      
-      // React components use PascalCase
-      UserProfile.jsx         # ✅ Good
-      UserProfile.tsx         # ✅ Good
-      
-      // Avoid these patterns
-      user_service.js         # ❌ snake_case
-      UserService.js          # ❌ PascalCase (except components)
-      ```
+      **📁 File Organization Standards:**
 
       **Directory Structure:**
       ```
-      project/
-      ├── src/                    # Source code
-      │   ├── models/             # Data models
-      │   ├── services/           # Business logic
-      │   ├── utils/              # Utility functions
-      │   └── tests/              # Test files
-      ├── docs/                   # Documentation
-      ├── config/                 # Configuration
-      ├── scripts/                # Build scripts
-      └── requirements.txt        # Dependencies
+      src/                    # Source code
+      ├── api/               # API endpoints
+      ├── classification/    # Core classification logic
+      ├── models/           # Data models
+      ├── evaluation/       # RAGAS evaluation
+      ├── utils/            # Shared utilities
+      └── __init__.py
+      
+      tests/                 # Test files
+      ├── unit/             # Unit tests
+      ├── integration/      # Integration tests
+      └── conftest.py       # Test configuration
+      
+      config/               # Configuration files
+      ├── *.yaml           # YAML configs
+      └── *.json           # JSON configs
+      
+      scripts/              # Utility scripts
+      docs/                 # Documentation
+      data/                 # Data files
       ```
+
+      **Naming Conventions:**
+      - Files: `snake_case.py`
+      - Classes: `PascalCase`
+      - Functions: `snake_case`
+      - Constants: `UPPER_SNAKE_CASE`
+      - Test files: `test_*.py`
 
   - type: suggest
-    when: "file_documentation"
+    when: "file_header"
     message: |
-      **File Documentation Standards:**
+      **📄 File Header Documentation:**
 
-      **Python File Headers:**
+      **Required Header Format:**
       ```python
       """
-      User Service Module
+      Module: path.to.module
+      Purpose: What this module does
+      Dependencies: List of file dependencies within our system
       
-      Purpose: Business logic for user management operations
-      Dependencies: models.User, services.EmailService, utils.validators
-      
-      This module provides user creation, authentication, and profile
-      management functionality with comprehensive error handling.
-      
-      Usage:
-          from services.user_service import UserService
-          service = UserService()
-          user = service.create_user(user_data)
-      
-      Author: John Doe <john.doe@example.com>
-      Created: 2024-01-15
-      Version: 1.2.0
+      Brief description of functionality and usage.
       """
-      
-      import logging
-      from typing import Dict, Optional
-      
-      from .models import User
-      from .services import EmailService
-      from .utils import validators
-      
-      logger = logging.getLogger(__name__)
       ```
 
-      **JavaScript/TypeScript File Headers:**
-      ```javascript
-      /**
-       * User Service Module
-       * 
-       * Purpose: Business logic for user management operations
-       * Dependencies: models/User, services/EmailService, utils/validators
-       * 
-       * This module provides user creation, authentication, and profile
-       * management functionality with comprehensive error handling.
-       * 
-       * @example
-       * import UserService from './services/UserService';
-       * const service = new UserService();
-       * const user = await service.createUser(userData);
-       * 
-       * @author John Doe <john.doe@example.com>
-       * @created 2024-01-15
-       * @version 1.2.0
-       */
-      
-      import { User } from '../models/User';
-      import { EmailService } from './EmailService';
-      import { validateEmail } from '../utils/validators';
+      **Documentation Standards:**
+      - **What**: Clear description of module purpose
+      - **Why**: Explain why this module exists
+      - **How**: Brief explanation of implementation approach
+      - **Dependencies**: List files this module depends on
+      - **Usage**: Example usage if applicable
+
+      **Function Documentation:**
+      ```python
+      def process_data(data: Dict) -> List[Result]:
+          """
+          Process input data and return results.
+          
+          Args:
+              data: Input data dictionary
+          
+          Returns:
+              List of processed results
+          
+          Dependencies: src/models/data_model.py
+          """
       ```
 
   - type: suggest
     when: "testing_standards"
     message: |
-      **Testing Standards:**
+      **🧪 Testing Standards:**
+
+      **Test Organization:**
+      - Unit tests in `tests/unit/`
+      - Integration tests in `tests/integration/`
+      - Test files named `test_*.py`
+      - Test classes named `Test*`
+      - Test methods named `test_*`
 
       **Test Structure (AAA Pattern):**
       ```python
-      def test_user_creation_success():
-          # Arrange - Set up test data and dependencies
-          user_data = {
-              'email': 'test@example.com',
-              'name': 'Test User',
-              'password': 'testpass123'
-          }
-          mock_email_service = Mock()
-          user_service = UserService(email_service=mock_email_service)
+      def test_functionality():
+          # Arrange - Set up test data
+          input_data = create_test_data()
           
-          # Act - Execute the function being tested
-          result = user_service.create_user(user_data)
+          # Act - Execute function
+          result = function_under_test(input_data)
           
-          # Assert - Verify the expected outcomes
-          assert result.email == user_data['email']
-          assert result.name == user_data['name']
-          mock_email_service.send_welcome_email.assert_called_once_with(result.email)
+          # Assert - Verify results
+          assert result.expected_value == actual_value
       ```
 
-      **Test Naming Conventions:**
-      ```python
-      # Good test names
-      def test_create_user_with_valid_data_returns_user():
-      def test_create_user_with_existing_email_raises_error():
-      def test_user_password_is_hashed_on_creation():
-      
-      # Bad test names
-      def test_user():  # Too vague
-      def test_create():  # Missing context
-      def test_it_works():  # Not descriptive
-      ```
+      **Test Data Management:**
+      - Use real data patterns, not dummy data
+      - Create realistic test scenarios
+      - Use factories for test data generation
+      - Avoid hardcoded test values
 
-      **Test Organization:**
-      ```
-      tests/
-      ├── unit/                     # Unit tests
-      │   ├── test_models.py
-      │   ├── test_services.py
-      │   └── test_utils.py
-      ├── integration/              # Integration tests
-      │   ├── test_api.py
-      │   └── test_database.py
-      └── fixtures/                 # Test data
-          ├── sample_users.json
-          └── test_models.pkl
-      ```
+      **Coverage Requirements:**
+      - Minimum 85% code coverage
+      - Test all public interfaces
+      - Test error conditions
+      - Test edge cases
 
   - type: suggest
     when: "code_quality"
     message: |
-      **Code Quality Standards:**
+      **🔧 Code Quality Standards:**
 
-      **Import Organization:**
-      ```python
-      # Standard library imports
-      import os
-      import sys
-      from datetime import datetime
-      from typing import List, Dict, Optional
-      
-      # Third-party imports
-      import django
-      from django.db import models
-      from django.contrib.auth import get_user_model
-      
-      # Local application imports
-      from .models import User, Profile
-      from .services import UserService
-      from .utils import helpers
-      ```
-
-      **Function Documentation:**
-      ```python
-      def create_user(user_data: Dict[str, Any]) -> User:
-          """
-          Create a new user with validation and email notification.
-          
-          Args:
-              user_data: Dictionary containing user information
-                  - email: User's email address
-                  - name: User's full name
-                  - password: User's password
-          
-          Returns:
-              User: Created user instance
-          
-          Raises:
-              ValidationError: If user data is invalid
-              BusinessLogicError: If user already exists
-          
-          Example:
-              user_data = {
-                  'email': 'user@example.com',
-                  'name': 'John Doe',
-                  'password': 'securepass123'
-              }
-              user = create_user(user_data)
-          """
-          # Implementation here
-          pass
-      ```
+      **Code Organization:**
+      - Single responsibility principle
+      - Functions under 20 lines
+      - Classes under 200 lines
+      - Modules under 500 lines
+      - Clear separation of concerns
 
       **Error Handling:**
-      ```python
-      def process_user_request(request_data: Dict) -> Dict:
-          try:
-              # Validate input
-              if not validate_request(request_data):
-                  raise ValidationError("Invalid request data")
-              
-              # Process request
-              result = process_data(request_data)
-              
-              logger.info(f"Successfully processed request: {request_data['id']}")
-              return result
-              
-          except ValidationError as e:
-              logger.warning(f"Validation error: {e}")
-              raise
-          except Exception as e:
-              logger.error(f"Unexpected error: {e}")
-              raise ProcessingError(f"Failed to process request: {str(e)}")
-      ```
+      - Use specific exception types
+      - Provide meaningful error messages
+      - Log errors appropriately
+      - Handle edge cases gracefully
+
+      **Performance:**
+      - Profile code for bottlenecks
+      - Use appropriate data structures
+      - Optimize critical paths
+      - Monitor memory usage
+
+      **Security:**
+      - Validate all inputs
+      - Sanitize user data
+      - Use secure defaults
+      - Follow OWASP guidelines
 
   - type: suggest
-    when: "development_workflow"
+    when: "dummy_data_detected"
     message: |
-      **Development Workflow:**
+      **🚫 NO DUMMY DATA POLICY:**
 
-      **Feature Development Process:**
-      1. **Create Feature Branch:**
-         ```bash
-         git checkout -b feature/user-authentication
-         ```
+      **NEVER use dummy data in production code:**
+      - ❌ `"test_company_123"`
+      - ❌ `"dummy_user"`
+      - ❌ `"fake_data"`
+      - ❌ `"sample_*"`
+      - ❌ `"mock_*"`
+      - ❌ `"example_*"`
 
-      2. **Follow Development Standards:**
-         - Write tests first (TDD approach)
-         - Follow naming conventions
-         - Add comprehensive documentation
-         - Ensure code quality standards
+      **ALWAYS use real data patterns:**
+      - ✅ Real company IDs from data/raw/company_ids_and_other.csv
+      - ✅ Real API responses from actual endpoints
+      - ✅ Real classification examples from production
+      - ✅ Real configuration values
 
-      3. **Run Quality Checks:**
-         ```bash
-         # Run linting
-         flake8 src/
-         black --check src/
-         
-         # Run tests
-         pytest
-         
-         # Check coverage
-         pytest --cov=src --cov-report=term-missing
-         ```
+      **For Testing:**
+      - Use Faker library for realistic test data
+      - Create test factories that generate realistic data
+      - Use actual data samples from production
+      - Never hardcode dummy values
 
-      4. **Commit Changes:**
-         ```bash
-         git add .
-         git commit -m "feat(auth): add JWT token authentication"
-         ```
+      **Data Sources:**
+      - Primary: `data/raw/company_ids_and_other.csv`
+      - API: Real Finch/Claude API responses
+      - Config: Real configuration values from .env
+      - Models: Real Pydantic model instances
 
-      5. **Create Pull Request:**
-         - Include comprehensive description
-         - Link related issues
-         - Request code review
+      **Why this matters:**
+      - Ensures code works with real data
+      - Prevents bugs from dummy data assumptions
+      - Maintains data integrity
+      - Improves testing reliability
 
-      **Code Review Checklist:**
-      - [ ] Code follows project standards
-      - [ ] Tests are included and passing
-      - [ ] Documentation is updated
-      - [ ] No security vulnerabilities
-      - [ ] Performance considerations addressed
-      - [ ] Error handling is comprehensive
+  - type: suggest
+    when: "data_cleanup_needed"
+    message: |
+      **🧹 Data Cleanup Required:**
 
-examples:
-  - input: |
-      # Poor commit message
-      git commit -m "fix bug"
-    output: "Use conventional commit format: fix(scope): specific description"
+      **Remove any dummy data from repository:**
+      - Delete files with dummy/test data
+      - Replace dummy values with real data patterns
+      - Update tests to use real data sources
+      - Clean up any hardcoded dummy values
 
-  - input: |
-      # AI attribution in commit
-      git commit -m "feat: add auth - Co-authored-by: Claude"
-    output: "NEVER include AI assistant attribution in commit messages"
+      **Real Data Sources:**
+      - Company data: `data/raw/company_ids_and_other.csv`
+      - API responses: Real Finch/Claude API calls
+      - Configuration: Real .env values
+      - Models: Real Pydantic instances
 
-  - input: |
-      # Mentioning AI in commit
-      git commit -m "fix: resolve issue with AI help"
-    output: "NEVER mention AI assistants in commit messages"
-
-  - input: |
-      # Poor file naming
-      userService.py
-    output: "Use snake_case for Python files: user_service.py"
-
-  - input: |
-      # Missing file header
-      import os
-      import sys
-    output: "Add comprehensive file header documentation"
-
-  - input: |
-      # Poor test structure
-      def test_user():
-          user = User()
-          assert user
-    output: "Use AAA pattern and descriptive test names"
-
-metadata:
-  priority: high
-  version: 1.0
-</rule>
-description:
-globs:
-alwaysApply: false
----
+      **Test Data Strategy:**
+      - Use Faker for realistic test data generation
+      - Create test factories that mirror real data
+      - Use actual data samples for integration tests
+      - Never commit dummy data to repository

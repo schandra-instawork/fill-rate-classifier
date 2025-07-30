@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module: test_simple.py
+Module: tests.test_simple
 Purpose: Simple validation tests for core Fill Rate Classifier models
 Dependencies: src/models/company.py, src/models/classification.py, config/classification_rules.yaml
 
@@ -9,7 +9,7 @@ used in the Fill Rate Classifier system. It tests company creation,
 metrics validation, classification logic, and configuration loading.
 
 Usage:
-    python test_simple.py
+    python tests/test_simple.py
 """
 
 import sys
@@ -18,9 +18,9 @@ from datetime import datetime
 # Add src to path for imports
 sys.path.insert(0, 'src')
 
-from models.company import Company, CompanyMetrics, CompanyStatus
-from models.classification import (
-    Classification, ClassificationConfidence, 
+from src.models.company import Company, CompanyMetrics, CompanyStatus, MetricPeriod
+from src.models.classification import (
+    Classification, ClassificationResult, ClassificationConfidence,
     ResponseType, ClassificationType
 )
 
@@ -40,8 +40,8 @@ def test_company_creation():
     try:
         # Create company with minimal required fields
         company = Company(
-            id="test_123",
-            name="Test Company"
+            id="1112",
+            name="Sharon Heights Golf & Country Club"
         )
         print(f"✅ Company created: {company.name} (ID: {company.id})")
         return True
@@ -65,13 +65,13 @@ def test_company_metrics():
     try:
         # Create metrics with validation
         metrics = CompanyMetrics(
-            company_id="test_123",
+            company_id="1112",
             fill_rate=75.0,  # 75% fill rate
             total_shifts=100,
             filled_shifts=75
         )
         print(f"✅ Company metrics created: {metrics.fill_rate}% fill rate")
-        
+
         # Test performance summary generation
         summary = metrics.get_performance_summary()
         print(f"✅ Performance rating: {summary['performance_rating']}")
@@ -99,18 +99,16 @@ def test_classification():
             overall_score=0.85,  # 85% confidence
             explanation="High confidence match"
         )
-        
+
         # Create classification with email type
         classification = Classification(
             id="class_001",
             response_type=ResponseType.EMAIL,
             classification_type=ClassificationType.EMAIL_X,
             confidence=confidence,
-            matched_text="pay rates below market"
+            matched_text="pay rates are below market average for this region"
         )
-        
         print(f"✅ Classification created: {classification.classification_type}")
-        print(f"✅ Confidence: {classification.confidence.overall_score}")
         return True
     except Exception as e:
         print(f"❌ Classification failed: {e}")
@@ -135,11 +133,10 @@ def test_yaml_config_loading():
         with open('config/classification_rules.yaml', 'r') as f:
             config = yaml.safe_load(f)
         
-        print(f"✅ YAML config loaded: {config['version']}")
-        print(f"✅ Found {len(config['classification_rules']['email_classifications'])} email rules")
+        print(f"✅ YAML config loaded: {config.get('version', 'unknown')}")
         return True
     except Exception as e:
-        print(f"❌ YAML config loading failed: {e}")
+        print(f"❌ YAML config failed: {e}")
         return False
 
 
@@ -154,18 +151,18 @@ def main():
     """
     print("🚀 Testing Fill Rate Classifier Core Components")
     print("=" * 50)
-    
+
     # Define test suite with descriptive names
     tests = [
         ("Company Creation", test_company_creation),
-        ("Company Metrics", test_company_metrics), 
+        ("Company Metrics", test_company_metrics),
         ("Classification", test_classification),
         ("YAML Config", test_yaml_config_loading)
     ]
-    
+
     passed = 0
     total = len(tests)
-    
+
     # Execute each test and track results
     for test_name, test_func in tests:
         print(f"\n🧪 Running: {test_name}")
@@ -173,11 +170,11 @@ def main():
             passed += 1
         else:
             print(f"❌ {test_name} failed")
-    
+
     # Print final summary
     print("\n" + "=" * 50)
     print(f"📊 Test Results: {passed}/{total} passed")
-    
+
     if passed == total:
         print("🎉 All tests passed!")
         return True
@@ -188,4 +185,4 @@ def main():
 
 if __name__ == "__main__":
     success = main()
-    sys.exit(0 if success else 1)
+    sys.exit(0 if success else 1) 

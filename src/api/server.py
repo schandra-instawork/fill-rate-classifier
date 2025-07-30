@@ -296,10 +296,11 @@ async def predict_fill_rate(
             company = Company(**request.company_data['company'])
             metrics = CompanyMetrics(**request.company_data['metrics'])
         else:
-            # Generate mock data for testing
-            from src.api.claude_client import MockFillRateAPI
-            mock_api = MockFillRateAPI(os.getenv("CLAUDE_API_KEY"))
-            return await mock_api.get_prediction(request.company_id)
+            # Require real company data for predictions
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Company data is required for predictions. Please provide company_data in the request."
+            )
         
         # Generate prediction
         response = await prediction_generator.generate_prediction(
@@ -655,7 +656,7 @@ async def sc_fill_rate_company(
                 company_info = company_row.iloc[0].to_dict()
                 logger.info(f"Found company info: {company_info['company_name']}")
         
-        # Generate fill rate analysis using Claude API
+        # Generate fill rate analysis using conversational Finch API
         recommendations = []
         
         if company_info:
@@ -663,10 +664,33 @@ async def sc_fill_rate_company(
             tier = company_info.get('tier', 'Unknown')
             rep_name = company_info.get('rep_name', 'Unknown')
             
-            # Try to get real analysis from Claude API
+            logger.info(f"Attempting conversational Finch API for company {company_id} ({company_name})")
+            
+            # Try conversational approach first (the solution from SAMPLE_FINCH_CHAIAN)
             try:
-                # Create a comprehensive analysis prompt
-                analysis_prompt = f"""Analyze fill rate performance for {company_name} (company_id: {company_id}, {tier}).
+                from src.api.conversational_fill_rate_client import ConversationalFillRateClient
+                
+                conv_client = ConversationalFillRateClient(fill_rate_client.api_key)
+                recommendations_list = conv_client.get_recommendations(company_id)
+                
+                # Convert to expected format
+                for rec in recommendations_list:
+                    recommendations.append({
+                        "type": rec["type"],
+                        "action": rec["message"],
+                        "priority": "high" if rec["priority"] <= 30 else "medium" if rec["priority"] <= 60 else "low",
+                        "confidence": rec["confidence"]
+                    })
+                
+                logger.info(f"✅ SUCCESS: Got {len(recommendations)} real recommendations from conversational API")
+                
+            except Exception as conv_error:
+                logger.warning(f"Conversational API failed: {conv_error}, falling back to Claude direct...")
+                
+                # Fallback to Claude direct API (previous approach)
+                try:
+                    # Create a comprehensive analysis prompt
+                    analysis_prompt = f"""Analyze fill rate performance for {company_name} (company_id: {company_id}, {tier}).
 
 Based on typical issues for a {tier} partner in their industry, provide 3 specific recommendations:
 1. One email outreach recommendation for the account manager
@@ -683,40 +707,43 @@ Return in this JSON format:
   ]
 }}"""
 
-                logger.info(f"Calling Claude API for dynamic recommendations for company {company_id}")
-                
-                # Use the direct Claude endpoint
-                import requests
-                claude_url = f"{fill_rate_client.base_url}/direct-claude/run"
-                headers = {
-                    "Content-Type": "application/json",
-                    "Authorization": f"Bearer {fill_rate_client.api_key}"
-                }
-                data = {"input": analysis_prompt}
-                
-                response = requests.post(claude_url, json=data, headers=headers, timeout=30)
-                
-                if response.status_code == 200:
-                    claude_result = response.json()
-                    claude_output = claude_result.get("output", "")
+                    logger.info(f"Calling Claude API for dynamic recommendations for company {company_id}")
                     
-                    # Parse the JSON response
-                    import json
-                    import re
+                    # Use the direct Claude endpoint
+                    import requests
+                    claude_url = f"{fill_rate_client.base_url}/direct-claude/run"
+                    headers = {
+                        "Content-Type": "application/json",
+                        "Authorization": f"Bearer {fill_rate_client.api_key}"
+                    }
+                    data = {"input": analysis_prompt}
                     
-                    # Extract JSON from the response (it might be wrapped in markdown)
-                    json_match = re.search(r'\{.*\}', claude_output, re.DOTALL)
-                    if json_match:
-                        recommendations_data = json.loads(json_match.group())
-                        recommendations = recommendations_data.get("recommendations", [])
-                        logger.info(f"Successfully parsed {len(recommendations)} recommendations from Claude")
-                    else:
-                        logger.warning("Could not extract JSON from Claude response")
-                        raise ValueError("Invalid Claude response format")
+                    response = requests.post(claude_url, json=data, headers=headers, timeout=30)
+                    
+                    if response.status_code == 200:
+                        claude_result = response.json()
+                        claude_output = claude_result.get("output", "")
                         
-                else:
-                    logger.warning(f"Claude API call failed with status {response.status_code}")
-                    raise requests.RequestException(f"Claude API error: {response.status_code}")
+                        # Parse the JSON response
+                        import json
+                        import re
+                        
+                        # Extract JSON from the response (it might be wrapped in markdown)
+                        json_match = re.search(r'\{.*\}', claude_output, re.DOTALL)
+                        if json_match:
+                            recommendations_data = json.loads(json_match.group())
+                            recommendations = recommendations_data.get("recommendations", [])
+                            logger.info(f"Successfully parsed {len(recommendations)} recommendations from Claude fallback")
+                        else:
+                            logger.warning("Could not extract JSON from Claude response")
+                            raise ValueError("Invalid Claude response format")
+                            
+                    else:
+                        logger.warning(f"Claude API call failed with status {response.status_code}")
+                        raise requests.RequestException(f"Claude API error: {response.status_code}")
+                        
+                except Exception as claude_error:
+                    logger.error(f"Both conversational and Claude APIs failed: {claude_error}")
                     
             except Exception as e:
                 logger.warning(f"Claude API analysis failed: {str(e)}")

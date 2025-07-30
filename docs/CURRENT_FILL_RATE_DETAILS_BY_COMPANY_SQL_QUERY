@@ -1,0 +1,225 @@
+WITH am_roster AS (
+  SELECT
+    *
+  FROM metrics.dim_sales_roster
+  WHERE
+    rep_team = 'AM'
+  LIMIT 10000
+), rep_unfilled_shifts /* All unfilled shift groups for the rep's businesses */ AS (
+  SELECT
+    dsg.company_id,
+    db.business_id,
+    db.business_name,
+    dsg.biz_region_name,
+    dsg.gig_position,
+    dsg.shift_group_id,
+    dsg.current_applicant_rate_usd,
+    dsg.current_business_rate_usd,
+    dsg.is_requested_worker_only,
+    dsg.starts_at,
+    dsg.ends_at,
+    dsg.created_at,
+    count(ds.shift_id) AS booked_shifts,
+    count(ds.worker_id) AS filled_shifts,
+    am.rep_name,
+    am.rep_manager,
+    sa.account_management_tier__c AS account_management_tier
+  FROM metrics.dim_shift_groups AS dsg
+  JOIN metrics.dim_shifts AS ds
+    ON dsg.shift_group_id = ds.shift_group_id
+  JOIN metrics.dim_businesses AS db
+    ON dsg.business_id = db.business_id
+  LEFT JOIN metrics.dim_companies AS dc
+    ON dsg.company_id = dc.company_id
+  LEFT JOIN salesforce.account AS sa
+    ON dc.salesforce_account_id = sa.id
+  LEFT JOIN am_roster AS am
+    ON am.rep_sfdc_id = sa.account_manager__c
+    AND am.rep_ramp_month = date_trunc('month', convert_timezone('America/Los_Angeles', getdate()))
+  WHERE
+    ds.is_cancelled = 0 AND dsg.company_id = {company_id} /* PARAMETER HERE */
+  GROUP BY
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    16,
+    17
+  HAVING
+    count(ds.shift_id) > count(ds.worker_id) /* Only unfilled */
+  LIMIT 10000
+), access_tier /* Access tier info for all relevant shift groups */ AS (
+  SELECT
+    shift_group_id,
+    max_access_group,
+    max(access_tier) AS current_access_tier,
+    max(updated_at) AS access_tier_last_updated_at,
+    sum(eligible_pro_count) AS cumulative_eligible_pro_count
+  FROM iw_backend_db.dispatch_access_state_accessstatelog
+  WHERE
+    shift_group_id IN (
+      SELECT DISTINCT
+        shift_group_id
+      FROM rep_unfilled_shifts
+    )
+  GROUP BY
+    shift_group_id,
+    max_access_group
+  LIMIT 10000
+), worker_assignments /* Worker assignments for all relevant shifts */ AS (
+  SELECT
+    wa.worker_id,
+    wa.shift_id,
+    wa.final_worker_id,
+    wa.outcome,
+    wa.unassigned_reason,
+    wa.assigned_at,
+    wa.unassigned_at,
+    wa.booking_num,
+    row_number() OVER (PARTITION BY wa.shift_id, wa.worker_id ORDER BY wa.assigned_at) AS assignment_sequence
+  FROM metrics.dim_pro_shift_bookings AS wa
+  JOIN metrics.dim_shifts AS ds
+    ON wa.shift_id = ds.shift_id
+  WHERE
+    ds.shift_group_id IN (
+      SELECT DISTINCT
+        shift_group_id
+      FROM rep_unfilled_shifts
+    )
+  LIMIT 10000
+), worker_distances /* Worker distances */ AS (
+  SELECT DISTINCT
+    shift_id,
+    worker_id,
+    distance
+  FROM analytics.shift_booking_outcomes
+  LIMIT 10000
+), shift_metrics /* Shift-level metrics */ AS (
+  SELECT
+    shift_id,
+    shift_group_id,
+    booked_shift_group_size,
+    filled_shift_group_size,
+    biz_region_name,
+    gig_position,
+    shift_applicant_rate,
+    pricing_type
+  FROM analytics.shift_booking_outcomes
+  WHERE
+    shift_group_id IN (
+      SELECT DISTINCT
+        shift_group_id
+      FROM rep_unfilled_shifts
+    )
+  GROUP BY
+    shift_id,
+    shift_group_id,
+    booked_shift_group_size,
+    filled_shift_group_size,
+    biz_region_name,
+    gig_position,
+    shift_applicant_rate,
+    pricing_type
+  LIMIT 10000
+)
+SELECT
+  rus.business_id,
+  rus.business_name,
+  rus.biz_region_name,
+  rus.gig_position,
+  rus.shift_group_id,
+  rus.starts_at,
+  rus.ends_at,
+  rus.created_at,
+  rus.booked_shifts,
+  rus.filled_shifts,
+  rus.rep_name,
+  rus.rep_manager,
+  rus.account_management_tier,
+  at.current_access_tier,
+  at.max_access_group,
+  at.cumulative_eligible_pro_count,
+  at.access_tier_last_updated_at,
+  wa.worker_id,
+  wa.final_worker_id,
+  ds.shift_id,
+  wa.outcome,
+  wa.unassigned_reason,
+  wa.assigned_at,
+  wa.unassigned_at,
+  wa.booking_num,
+  wa.assignment_sequence,
+  pa.reliability_score,
+  pa.past_shifts,
+  pa.worker_level,
+  wd.distance,
+  ai.status AS voice_confirmed,
+  bcg.target_level AS bgc_level,
+  bcg.drug_screening_required,
+  ds.is_requested_worker_only,
+  ds.is_flexible_time_task,
+  ds.is_long_term_assignment,
+  ds.booking_applicant_rate_usd,
+  sgp.recommended_rate,
+  CASE
+    WHEN sgp.recommended_rate > 0
+    THEN ds.booking_applicant_rate_usd * 1.0 / sgp.recommended_rate
+    ELSE 1
+  END AS reco_rate_ratio,
+  ds.created_at AS shift_created_at,
+  ds.starts_at AS shift_starts_at,
+  ds.ends_at AS shift_ends_at,
+  datediff(hour, ds.starts_at, ds.ends_at) AS shift_duration,
+  datediff(hour, ds.created_at, ds.starts_at) AS booking_lead_time,
+  datediff(hour, wa.assigned_at, wa.unassigned_at) AS hours_between_assigned_unassigned,
+  CASE
+    WHEN at.max_access_group = at.current_access_tier
+    THEN at.access_tier_last_updated_at
+    ELSE NULL
+  END /* Access tier timing */ AS changed_to_max_access_tier_at,
+  datediff(
+    hour,
+    CASE
+      WHEN at.max_access_group = at.current_access_tier
+      THEN at.access_tier_last_updated_at
+      ELSE NULL
+    END,
+    ds.starts_at
+  ) AS dispatch_max_tier_lead_time
+FROM rep_unfilled_shifts AS rus
+LEFT JOIN access_tier AS at
+  ON rus.shift_group_id = at.shift_group_id
+LEFT JOIN metrics.dim_shifts AS ds
+  ON rus.shift_group_id = ds.shift_group_id
+LEFT JOIN worker_assignments AS wa
+  ON ds.shift_id = wa.shift_id
+LEFT JOIN worker_distances AS wd
+  ON wa.shift_id = wd.shift_id AND wa.worker_id = wd.worker_id
+LEFT JOIN shift_metrics AS sm
+  ON ds.shift_id = sm.shift_id
+LEFT JOIN iw_backend_db.w2_companybackgroundcheckcheckrpackage AS bcg
+  ON ds.company_id = bcg.company_id
+LEFT JOIN iw_backend_db.pricing_shiftgrouppricing AS sgp
+  ON ds.shift_group_id = sgp.shift_group_id
+LEFT JOIN analytics.pro_attributes AS pa
+  ON wa.worker_id = pa.worker_id
+LEFT JOIN iw_backend_db.backend_aivoiceshiftconfirmation AS ai
+  ON pa.worker_id = ai.worker_id
+WHERE
+  rus.booked_shifts > rus.filled_shifts
+ORDER BY
+  rus.business_id,
+  rus.gig_position,
+  rus.shift_group_id,
+  ds.starts_at,
+  wa.worker_id,
+  wa.assigned_at

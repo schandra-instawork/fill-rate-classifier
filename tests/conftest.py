@@ -53,34 +53,34 @@ def test_env_vars():
     }
 
 @pytest.fixture
-def mock_api_responses():
-    """Provide mock API responses for testing"""
+def realistic_api_responses():
+    """Provide realistic API responses for testing using real data patterns"""
     return {
-        "company_123": {
-            "company_name": "Test Company",
-            "tier": "Tier 2",
-            "recommendation": "Please reach out to discuss their contract renewal"
+        "1112": {
+            "company_name": "Sharon Heights Golf & Country Club",
+            "tier": "Tier 3",
+            "recommendation": "Fill rates are declining due to pay rates below market average. Workers are choosing higher-paying opportunities."
         },
-        "company_456": {
-            "company_name": "Another Company", 
-            "tier": "Tier 1",
-            "recommendation": "Update their account status in the system"
+        "2905": {
+            "company_name": "Starfire Golf Club",
+            "tier": "Tier 4", 
+            "recommendation": "Geographic coverage is limited in rural locations. Consider expanding worker pool."
         }
     }
 
 @pytest.fixture
-def sample_classification_data():
-    """Provide sample classification test data"""
+def realistic_classification_data():
+    """Provide realistic classification test data using real company patterns"""
     return [
         {
-            "company_id": "123",
-            "api_response": "Please reach out to discuss their contract renewal",
+            "company_id": "1112",
+            "api_response": "Fill rates are declining due to pay rates below market average. Workers are choosing higher-paying opportunities.",
             "expected_classification": "email",
             "confidence_threshold": 0.8
         },
         {
-            "company_id": "456", 
-            "api_response": "Update their account status in the system",
+            "company_id": "2905",
+            "api_response": "Geographic coverage is limited in rural locations. Consider expanding worker pool.",
             "expected_classification": "action",
             "confidence_threshold": 0.9
         }

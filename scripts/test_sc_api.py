@@ -20,7 +20,7 @@ from typing import Dict, Any
 def test_sc_fill_rate_company_api(
     base_url: str = "http://localhost:8000",
     bearer_token: str = None,
-    company_id: str = "test_company_123"
+    company_id: str = "1112"
 ) -> Dict[str, Any]:
     """
     Test the SC Fill Rate Company API endpoint
@@ -121,10 +121,10 @@ if __name__ == "__main__":
         print("Set it with: export API_BEARER_TOKEN='your-token-here'")
         print("-" * 50)
     
-    # Test with a sample company ID
+    # Test with a real Tier 2 company ID - Stanford Dining
     result = test_sc_fill_rate_company_api(
         bearer_token=bearer_token,
-        company_id="company_12345"
+        company_id="7259"
     )
     
     print("\n" + "=" * 50)

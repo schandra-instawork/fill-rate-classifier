@@ -1,0 +1,2378 @@
+{
+  "test_info": {
+    "timestamp_cst": "2025-07-29T15:28:21.564241-05:00",
+    "companies_tested": 75
+  },
+  "results": [
+    {
+      "company_id": 61901,
+      "company_name": "Buffalo Convention Center",
+      "tier": "Tier 3",
+      "account_manager": "Christian George",
+      "primary_action": "Analyze shift patterns for Buffalo Convention Center and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Buffalo Convention Center and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Buffalo Convention Center's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 89919,
+      "company_name": "Pure Horizons, LLC",
+      "tier": "Tier 3",
+      "account_manager": "Kati Ciraci",
+      "primary_action": "Analyze shift patterns for Pure Horizons, LLC and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Pure Horizons, LLC and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Pure Horizons, LLC's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 53214,
+      "company_name": "Nora Cocina Catering",
+      "tier": "Tier 3",
+      "account_manager": "Mayur Mistry",
+      "primary_action": "Analyze shift patterns for Nora Cocina Catering and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Nora Cocina Catering and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Nora Cocina Catering's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 39522,
+      "company_name": "Aramark - Nat Bailey Stadium",
+      "tier": "Tier 3",
+      "account_manager": "Evan Coghlan",
+      "primary_action": "Analyze shift patterns for Aramark - Nat Bailey Stadium and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Aramark - Nat Bailey Stadium and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Aramark - Nat Bailey Stadium's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 62001,
+      "company_name": "The Limited Hotel",
+      "tier": "Tier 3",
+      "account_manager": "Doren Blake",
+      "primary_action": "Analyze shift patterns for The Limited Hotel and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for The Limited Hotel and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for The Limited Hotel's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 48596,
+      "company_name": "TForce Logistics - Tampa",
+      "tier": "Tier 2",
+      "account_manager": "Chris Grettano",
+      "primary_action": "Analyze shift patterns for TForce Logistics - Tampa and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for TForce Logistics - Tampa and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for TForce Logistics - Tampa's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 73318,
+      "company_name": "Streakwave Wireless Inc.",
+      "tier": "Tier 3",
+      "account_manager": "Brittney Karlow",
+      "primary_action": "Analyze shift patterns for Streakwave Wireless Inc. and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Streakwave Wireless Inc. and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Streakwave Wireless Inc.'s location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 41131,
+      "company_name": "Aramark - Arrowhead Stadium",
+      "tier": "Tier 1",
+      "account_manager": "Anthony Waite",
+      "primary_action": "Update worker pool targeting for Aramark - Arrowhead Stadium's location and shift types",
+      "action_priority": "medium",
+      "action_confidence": 0.87,
+      "template_id": "1A",
+      "template_name": "Geographic Targeting",
+      "classification_confidence": 0.95,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Aramark - Arrowhead Stadium's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 71900,
+      "company_name": "The Atriums Senior Living",
+      "tier": "Tier 3",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for The Atriums Senior Living and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for The Atriums Senior Living and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for The Atriums Senior Living's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 75652,
+      "company_name": "Shack Shine",
+      "tier": "Tier 3",
+      "account_manager": "Veronica Van Name",
+      "primary_action": "Analyze shift patterns for Shack Shine and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Shack Shine and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Shack Shine's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 83227,
+      "company_name": "Tesla - Anaheim Hills CA",
+      "tier": "Tier 2",
+      "account_manager": "Karla Torrez",
+      "primary_action": "Analyze shift patterns for Tesla - Anaheim Hills CA and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Tesla - Anaheim Hills CA and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Tesla - Anaheim Hills CA's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 46445,
+      "company_name": "Stunning and Brilliant Events Charlotte",
+      "tier": "Tier 3",
+      "account_manager": "Doren Blake",
+      "primary_action": "Analyze shift patterns for Stunning and Brilliant Events Charlotte and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Stunning and Brilliant Events Charlotte and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Stunning and Brilliant Events Charlotte's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 62791,
+      "company_name": "George Washington University - Student Center",
+      "tier": "Tier 3",
+      "account_manager": "Doren Blake",
+      "primary_action": "Analyze shift patterns for George Washington University - Student Center and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for George Washington University - Student Center and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for George Washington University - Student Center's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 48618,
+      "company_name": "Aramark - Coppell ISD",
+      "tier": "Tier 3",
+      "account_manager": "Kati Ciraci",
+      "primary_action": "Analyze shift patterns for Aramark - Coppell ISD and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Aramark - Coppell ISD and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Aramark - Coppell ISD's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 35824,
+      "company_name": "Michel De France",
+      "tier": "Tier 3",
+      "account_manager": "Amer Awad",
+      "primary_action": "Analyze shift patterns for Michel De France and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Michel De France and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Michel De France's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 54064,
+      "company_name": "SSC - Middle Tennessee State University",
+      "tier": "Tier 2",
+      "account_manager": "Jonathan Pujol",
+      "primary_action": "Analyze shift patterns for SSC - Middle Tennessee State University and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for SSC - Middle Tennessee State University and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for SSC - Middle Tennessee State University's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 56692,
+      "company_name": "Courtyard by Marriott Pittsburgh Greensburg | Concord",
+      "tier": "Tier 3",
+      "account_manager": "Jennifer Lorie",
+      "primary_action": "Analyze shift patterns for Courtyard by Marriott Pittsburgh Greensburg | Concord and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Courtyard by Marriott Pittsburgh Greensburg | Concord and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Courtyard by Marriott Pittsburgh Greensburg | Concord's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 33146,
+      "company_name": "CORT - Houston",
+      "tier": "Tier 3",
+      "account_manager": "Chris Grettano",
+      "primary_action": "Analyze shift patterns for CORT - Houston and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for CORT - Houston and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for CORT - Houston's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 55951,
+      "company_name": "Little Caesars Arena - DN",
+      "tier": "Tier 1",
+      "account_manager": "Anthony Waite",
+      "primary_action": "Update worker pool targeting for Little Caesars Arena - DN's location and shift types",
+      "action_priority": "medium",
+      "action_confidence": 0.87,
+      "template_id": "1A",
+      "template_name": "Geographic Targeting",
+      "classification_confidence": 0.95,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Little Caesars Arena - DN's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 37183,
+      "company_name": "Capitol Foods",
+      "tier": "Tier 3",
+      "account_manager": "Kamel Zeidan",
+      "primary_action": "Analyze shift patterns for Capitol Foods and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Capitol Foods and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Capitol Foods's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 69532,
+      "company_name": "FLIK @ Bayer Creve Coeur",
+      "tier": "Tier 3",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for FLIK @ Bayer Creve Coeur and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for FLIK @ Bayer Creve Coeur and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for FLIK @ Bayer Creve Coeur's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 56780,
+      "company_name": "Crothall - FISH Memorial Hospital",
+      "tier": "Tier 3",
+      "account_manager": "Ana Hernandez",
+      "primary_action": "Analyze shift patterns for Crothall - FISH Memorial Hospital and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Crothall - FISH Memorial Hospital and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Crothall - FISH Memorial Hospital's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 38737,
+      "company_name": "Restaurant Depot - Marietta GA",
+      "tier": "Tier 3",
+      "account_manager": "Chris Grettano",
+      "primary_action": "Analyze shift patterns for Restaurant Depot - Marietta GA and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Restaurant Depot - Marietta GA and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Restaurant Depot - Marietta GA's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 44020,
+      "company_name": "Eurest at MilliporeSigma",
+      "tier": "Tier 3",
+      "account_manager": "Morgan Fine",
+      "primary_action": "Analyze shift patterns for Eurest at MilliporeSigma and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Eurest at MilliporeSigma and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Eurest at MilliporeSigma's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 76330,
+      "company_name": "Citi Mortgage \u2013 St. Louis - Aramark",
+      "tier": "Tier 3",
+      "account_manager": "Tyler Casella",
+      "primary_action": "Analyze shift patterns for Citi Mortgage \u2013 St. Louis - Aramark and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Citi Mortgage \u2013 St. Louis - Aramark and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Citi Mortgage \u2013 St. Louis - Aramark's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 21746,
+      "company_name": "Cafe Valley",
+      "tier": "Tier 1",
+      "account_manager": "Amer Awad",
+      "primary_action": "Update worker pool targeting for Cafe Valley's location and shift types",
+      "action_priority": "medium",
+      "action_confidence": 0.87,
+      "template_id": "1A",
+      "template_name": "Geographic Targeting",
+      "classification_confidence": 0.95,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Cafe Valley's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 58028,
+      "company_name": "A Superior Cleaning Services LLC",
+      "tier": "Tier 2",
+      "account_manager": "Jonathan Pujol",
+      "primary_action": "Analyze shift patterns for A Superior Cleaning Services LLC and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for A Superior Cleaning Services LLC and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for A Superior Cleaning Services LLC's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 84592,
+      "company_name": "Canteen - Farmers Insurance Kansas City",
+      "tier": "Tier 3",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for Canteen - Farmers Insurance Kansas City and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Canteen - Farmers Insurance Kansas City and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Canteen - Farmers Insurance Kansas City's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 71525,
+      "company_name": "Dave & Buster's Houston - Katy Fwy",
+      "tier": "Tier 3",
+      "account_manager": "Karla Torrez",
+      "primary_action": "Analyze shift patterns for Dave & Buster's Houston - Katy Fwy and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Dave & Buster's Houston - Katy Fwy and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Dave & Buster's Houston - Katy Fwy's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 29227,
+      "company_name": "Tesla Markham Ontario",
+      "tier": "Tier 2",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for Tesla Markham Ontario and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Tesla Markham Ontario and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Tesla Markham Ontario's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 49249,
+      "company_name": "Fillogic - Tanger Outlets",
+      "tier": "Tier 2",
+      "account_manager": "Megan Cowee",
+      "primary_action": "Analyze shift patterns for Fillogic - Tanger Outlets and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Fillogic - Tanger Outlets and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Fillogic - Tanger Outlets's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 57534,
+      "company_name": "Holiday Inn & Suites - Farmington Hills",
+      "tier": "Tier 3",
+      "account_manager": "Bryan Garcia",
+      "primary_action": "Analyze shift patterns for Holiday Inn & Suites - Farmington Hills and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Holiday Inn & Suites - Farmington Hills and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Holiday Inn & Suites - Farmington Hills's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 48597,
+      "company_name": "TForce Logistics - Orlando",
+      "tier": "Tier 3",
+      "account_manager": "Chris Grettano",
+      "primary_action": "Analyze shift patterns for TForce Logistics - Orlando and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for TForce Logistics - Orlando and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for TForce Logistics - Orlando's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 39975,
+      "company_name": "Guckenheimer - New England BioLabs",
+      "tier": "Tier 3",
+      "account_manager": "Morgan Fine",
+      "primary_action": "Analyze shift patterns for Guckenheimer - New England BioLabs and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Guckenheimer - New England BioLabs and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Guckenheimer - New England BioLabs's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 57790,
+      "company_name": "Radiant Global Logistics - Phoenix",
+      "tier": "Tier 3",
+      "account_manager": "Kyle Soekotjo",
+      "primary_action": "Analyze shift patterns for Radiant Global Logistics - Phoenix and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Radiant Global Logistics - Phoenix and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Radiant Global Logistics - Phoenix's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 78086,
+      "company_name": "Carolina University",
+      "tier": "Tier 3",
+      "account_manager": "Doren Blake",
+      "primary_action": "Analyze shift patterns for Carolina University and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Carolina University and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Carolina University's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 39415,
+      "company_name": "The Rental Plug",
+      "tier": "Tier 3",
+      "account_manager": "Ana Hernandez",
+      "primary_action": "Analyze shift patterns for The Rental Plug and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for The Rental Plug and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for The Rental Plug's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 44996,
+      "company_name": "DoubleTree by Hilton Hotel Washington DC - Silver Spring",
+      "tier": "Tier 3",
+      "account_manager": "Doren Blake",
+      "primary_action": "Analyze shift patterns for DoubleTree by Hilton Hotel Washington DC - Silver Spring and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for DoubleTree by Hilton Hotel Washington DC - Silver Spring and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for DoubleTree by Hilton Hotel Washington DC - Silver Spring's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 43547,
+      "company_name": "Canopy by Hilton Washington DC Embassy Row",
+      "tier": "Tier 3",
+      "account_manager": "Doren Blake",
+      "primary_action": "Analyze shift patterns for Canopy by Hilton Washington DC Embassy Row and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Canopy by Hilton Washington DC Embassy Row and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Canopy by Hilton Washington DC Embassy Row's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 60615,
+      "company_name": "University of Minnesota - Bailey Dining Hall",
+      "tier": "Tier 3",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for University of Minnesota - Bailey Dining Hall and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for University of Minnesota - Bailey Dining Hall and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for University of Minnesota - Bailey Dining Hall's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 36410,
+      "company_name": "Guckenheimer Hangar 17",
+      "tier": "Tier 2",
+      "account_manager": "Amer Awad",
+      "primary_action": "Analyze shift patterns for Guckenheimer Hangar 17 and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Guckenheimer Hangar 17 and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Guckenheimer Hangar 17's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 53520,
+      "company_name": "America's Center Convention Complex",
+      "tier": "Tier 3",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for America's Center Convention Complex and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for America's Center Convention Complex and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for America's Center Convention Complex's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 67610,
+      "company_name": "JohnDow Industrial",
+      "tier": "Tier 3",
+      "account_manager": "Brittney Karlow",
+      "primary_action": "Analyze shift patterns for JohnDow Industrial and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for JohnDow Industrial and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for JohnDow Industrial's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 34325,
+      "company_name": "AC Hotel by Marriott Austin Hill Country",
+      "tier": "Tier 3",
+      "account_manager": "Kati Ciraci",
+      "primary_action": "Analyze shift patterns for AC Hotel by Marriott Austin Hill Country and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for AC Hotel by Marriott Austin Hill Country and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for AC Hotel by Marriott Austin Hill Country's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 68441,
+      "company_name": "Highland Cabinetry",
+      "tier": "Tier 3",
+      "account_manager": "Amer Awad",
+      "primary_action": "Analyze shift patterns for Highland Cabinetry and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Highland Cabinetry and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Highland Cabinetry's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 78693,
+      "company_name": "Shamrock Trading Company - Aramark",
+      "tier": "Tier 3",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for Shamrock Trading Company - Aramark and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Shamrock Trading Company - Aramark and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Shamrock Trading Company - Aramark's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 73825,
+      "company_name": "Home City Ice - Pittsburgh",
+      "tier": "Tier 3",
+      "account_manager": "Brittney Karlow",
+      "primary_action": "Analyze shift patterns for Home City Ice - Pittsburgh and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Home City Ice - Pittsburgh and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Home City Ice - Pittsburgh's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 55507,
+      "company_name": "Sheraton Valley Forge Hotel",
+      "tier": "Tier 3",
+      "account_manager": "Bryan Garcia",
+      "primary_action": "Analyze shift patterns for Sheraton Valley Forge Hotel and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Sheraton Valley Forge Hotel and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Sheraton Valley Forge Hotel's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 15371,
+      "company_name": "City Club LA - Club Corp",
+      "tier": "Tier 3",
+      "account_manager": "Katie Atwater",
+      "primary_action": "Analyze shift patterns for City Club LA - Club Corp and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for City Club LA - Club Corp and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for City Club LA - Club Corp's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 72369,
+      "company_name": "Garden State Growers",
+      "tier": "Tier 1",
+      "account_manager": "Jennifer Lorie",
+      "primary_action": "Update worker pool targeting for Garden State Growers's location and shift types",
+      "action_priority": "medium",
+      "action_confidence": 0.87,
+      "template_id": "1A",
+      "template_name": "Geographic Targeting",
+      "classification_confidence": 0.95,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Garden State Growers's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 55183,
+      "company_name": "SP Plus - Baltimore",
+      "tier": "Tier 3",
+      "account_manager": "Doren Blake",
+      "primary_action": "Analyze shift patterns for SP Plus - Baltimore and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for SP Plus - Baltimore and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for SP Plus - Baltimore's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 61751,
+      "company_name": "Onyx Event Center",
+      "tier": "Tier 3",
+      "account_manager": "Veronica Van Name",
+      "primary_action": "Analyze shift patterns for Onyx Event Center and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Onyx Event Center and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Onyx Event Center's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 73321,
+      "company_name": "Northwell Health at Jones Beach Theater - Legends",
+      "tier": "Tier 3",
+      "account_manager": "Christian George",
+      "primary_action": "Analyze shift patterns for Northwell Health at Jones Beach Theater - Legends and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Northwell Health at Jones Beach Theater - Legends and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Northwell Health at Jones Beach Theater - Legends's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 41645,
+      "company_name": "Summer Camp",
+      "tier": "Tier 2",
+      "account_manager": "Amer Awad",
+      "primary_action": "Analyze shift patterns for Summer Camp and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Summer Camp and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Summer Camp's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 45829,
+      "company_name": "The Gathering Spot",
+      "tier": "Tier 3",
+      "account_manager": "Camille Hine",
+      "primary_action": "Analyze shift patterns for The Gathering Spot and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for The Gathering Spot and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for The Gathering Spot's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 42876,
+      "company_name": "Palm Beach Country Club",
+      "tier": "Tier 3",
+      "account_manager": "Bryan Garcia",
+      "primary_action": "Analyze shift patterns for Palm Beach Country Club and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Palm Beach Country Club and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Palm Beach Country Club's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 39782,
+      "company_name": "CHS Field",
+      "tier": "Tier 3",
+      "account_manager": "Anthony Waite",
+      "primary_action": "Analyze shift patterns for CHS Field and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for CHS Field and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for CHS Field's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 47468,
+      "company_name": "Hughes Supply",
+      "tier": "Tier 3",
+      "account_manager": "Brock Dietrich",
+      "primary_action": "Analyze shift patterns for Hughes Supply and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Hughes Supply and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Hughes Supply's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 63138,
+      "company_name": "New Orleans Marriott",
+      "tier": "Tier 3",
+      "account_manager": "Bryan Garcia",
+      "primary_action": "Analyze shift patterns for New Orleans Marriott and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for New Orleans Marriott and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for New Orleans Marriott's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 46309,
+      "company_name": "WorldPac - Mount Vernon NY",
+      "tier": "Tier 3",
+      "account_manager": "Karla Torrez",
+      "primary_action": "Analyze shift patterns for WorldPac - Mount Vernon NY and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for WorldPac - Mount Vernon NY and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for WorldPac - Mount Vernon NY's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 30039,
+      "company_name": "City Experiences Navy Pier",
+      "tier": "Tier 3",
+      "account_manager": "Veronica Van Name",
+      "primary_action": "Analyze shift patterns for City Experiences Navy Pier and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for City Experiences Navy Pier and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for City Experiences Navy Pier's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 57080,
+      "company_name": "Content Recovery Specialists of Louisville",
+      "tier": "Tier 3",
+      "account_manager": "Jennifer Lorie",
+      "primary_action": "Analyze shift patterns for Content Recovery Specialists of Louisville and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Content Recovery Specialists of Louisville and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Content Recovery Specialists of Louisville's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 86807,
+      "company_name": "Mastercard - NYC Tech Hub",
+      "tier": "Tier 3",
+      "account_manager": "Morgan Fine",
+      "primary_action": "Analyze shift patterns for Mastercard - NYC Tech Hub and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Mastercard - NYC Tech Hub and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Mastercard - NYC Tech Hub's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 63850,
+      "company_name": "Beckton Dickinson Covington - FLIK",
+      "tier": "Tier 3",
+      "account_manager": "Camille Hine",
+      "primary_action": "Analyze shift patterns for Beckton Dickinson Covington - FLIK and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Beckton Dickinson Covington - FLIK and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Beckton Dickinson Covington - FLIK's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 52980,
+      "company_name": "House of Blues Las Vegas",
+      "tier": "Tier 2",
+      "account_manager": "Kyle Soekotjo",
+      "primary_action": "Analyze shift patterns for House of Blues Las Vegas and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for House of Blues Las Vegas and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for House of Blues Las Vegas's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 32963,
+      "company_name": "The Fillmore Philadelphia - Wolfgang Puck",
+      "tier": "Tier 3",
+      "account_manager": "Rachel Leonard",
+      "primary_action": "Analyze shift patterns for The Fillmore Philadelphia - Wolfgang Puck and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for The Fillmore Philadelphia - Wolfgang Puck and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for The Fillmore Philadelphia - Wolfgang Puck's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 40415,
+      "company_name": "Embassy Suites by Hilton Seattle Bellevue",
+      "tier": "Tier 3",
+      "account_manager": "Dane Turner",
+      "primary_action": "Analyze shift patterns for Embassy Suites by Hilton Seattle Bellevue and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Embassy Suites by Hilton Seattle Bellevue and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Embassy Suites by Hilton Seattle Bellevue's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 76656,
+      "company_name": "University of Tennessee at Chattanooga",
+      "tier": "Tier 3",
+      "account_manager": "Jonathan Pujol",
+      "primary_action": "Analyze shift patterns for University of Tennessee at Chattanooga and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for University of Tennessee at Chattanooga and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for University of Tennessee at Chattanooga's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 22296,
+      "company_name": "Core Mark",
+      "tier": "Tier 1",
+      "account_manager": "Amer Awad",
+      "primary_action": "Update worker pool targeting for Core Mark's location and shift types",
+      "action_priority": "medium",
+      "action_confidence": 0.87,
+      "template_id": "1A",
+      "template_name": "Geographic Targeting",
+      "classification_confidence": 0.95,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Core Mark's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 75459,
+      "company_name": "Florida Southern College -  Dining Services",
+      "tier": "Tier 3",
+      "account_manager": "Ana Hernandez",
+      "primary_action": "Analyze shift patterns for Florida Southern College -  Dining Services and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Florida Southern College -  Dining Services and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Florida Southern College -  Dining Services's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 48091,
+      "company_name": "KL Chempak",
+      "tier": "Tier 2",
+      "account_manager": "Daniel Makauskas",
+      "primary_action": "Analyze shift patterns for KL Chempak and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for KL Chempak and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for KL Chempak's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 32891,
+      "company_name": "Morrison Living - The Covington",
+      "tier": "Tier 2",
+      "account_manager": "Katie Atwater",
+      "primary_action": "Analyze shift patterns for Morrison Living - The Covington and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Morrison Living - The Covington and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Morrison Living - The Covington's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 60313,
+      "company_name": "Beth Israel Deaconess Hospital-Milton - Sodexo",
+      "tier": "Tier 3",
+      "account_manager": "Morgan Fine",
+      "primary_action": "Analyze shift patterns for Beth Israel Deaconess Hospital-Milton - Sodexo and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Beth Israel Deaconess Hospital-Milton - Sodexo and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Beth Israel Deaconess Hospital-Milton - Sodexo's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 45208,
+      "company_name": "Delnor Hospital",
+      "tier": "Tier 3",
+      "account_manager": "Brittney Karlow",
+      "primary_action": "Analyze shift patterns for Delnor Hospital and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Delnor Hospital and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Delnor Hospital's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    },
+    {
+      "company_id": 65375,
+      "company_name": "Venetian - Guest Services",
+      "tier": "Tier 2",
+      "account_manager": "Nick Armanasco",
+      "primary_action": "Analyze shift patterns for Venetian - Guest Services and identify peak demand periods",
+      "action_priority": "medium",
+      "action_confidence": 0.88,
+      "template_id": "2A",
+      "template_name": "Peak Demand Analysis",
+      "classification_confidence": 0.92,
+      "all_actions": [
+        {
+          "type": "action",
+          "action": "Analyze shift patterns for Venetian - Guest Services and identify peak demand periods",
+          "priority": "medium",
+          "confidence": 0.88
+        },
+        {
+          "type": "action",
+          "action": "Update worker pool targeting for Venetian - Guest Services's location and shift types",
+          "priority": "medium",
+          "confidence": 0.87
+        }
+      ],
+      "success": true,
+      "validation": {
+        "validation_score": 90,
+        "issues": [],
+        "recommendation": "SEND"
+      }
+    }
+  ]
+}
